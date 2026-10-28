@@ -629,25 +629,28 @@
       '<button class="btn sm" id="focus-btn">' + (state.focus ? "列表模式" : "逐句模式") + '</button>' +
       "</div>" +
 
+      '<div class="watch-tools">' +
       '<div class="mode-bar">' +
       '<button class="mode-tab' + (state.mode === "all" ? " active" : "") + '" data-mode="all">' +
-      "全部台词 <b>" + ep.lines.length + "</b></button>" +
+      '<span class="mt-label">全部台词</span><b>' + ep.lines.length + "</b></button>" +
       '<button class="mode-tab' + (state.mode === "pick" ? " active" : "") + '" data-mode="pick"' +
       (picks.length ? "" : " disabled") + ">" +
-      "精选精讲 <b>" + picks.length + "</b></button>" +
+      '<span class="mt-label">精选精讲</span><b>' + picks.length + "</b></button>" +
       "</div>" +
-
-      '<div class="watch-tools">' +
+      '<div class="tool-sep"></div>' +
       toolGroup("zh", [["off", "中文隐藏"], ["on", "中文常显"]], settings.zhAuto ? "on" : "off") +
       '<div class="tool-sep"></div>' +
       toolGroup("filter", [["all", "全部"], ["todo", "未学"], ["done", "已学"]], state.filter || "all") +
       '<div class="tool-sep"></div>' +
       '<div class="speed"><span>语速</span><input type="range" id="rate" min="0.5" max="1.4" step="0.02" value="' +
       settings.rate + '"><span id="rate-val">' + settings.rate.toFixed(2) + "</span></div>" +
-      '<div class="tool-sep"></div>' +
       '<div class="head-keys">' +
-      "<kbd>J</kbd><kbd>K</kbd> 上下句 <kbd>空格</kbd> 中文 " +
-      "<kbd>S</kbd> 朗读 <kbd>M</kbd> 已掌握 <kbd>F</kbd> 逐句 <kbd>P</kbd> 精讲" +
+      '<span class="hk"><kbd>J</kbd><kbd>K</kbd>上下句</span>' +
+      '<span class="hk"><kbd>空格</kbd>中文</span>' +
+      '<span class="hk"><kbd>S</kbd>朗读</span>' +
+      '<span class="hk"><kbd>M</kbd>已掌握</span>' +
+      '<span class="hk"><kbd>F</kbd>逐句</span>' +
+      '<span class="hk"><kbd>P</kbd>精讲</span>' +
       "</div>" +
       "</div></div></div>" +
 
@@ -1390,10 +1393,14 @@
       const a = act.dataset.act;
       if (a === "zh") {
         const zh = $(".zh", line);
-        if (zh) zh.hidden = false;
-        act.style.display = "none";
         const note = $(".note-box", line);
-        if (note) note.classList.remove("hidden-note");
+        if (zh) {
+          const willShow = zh.hidden;
+          zh.hidden = !willShow;
+          // 按钮文字跟着状态走，点开还能点回去
+          act.textContent = willShow ? "收起中文" : "中文已隐藏 · 点击查看";
+        }
+        if (note) note.classList.toggle("hidden-note", !zh || zh.hidden);
       } else if (a === "speak") speak(state.ep.lines[i].en);
       else if (a === "star") toggleLearned(i);
       return;
@@ -1491,14 +1498,15 @@
     if (!state.ep || parseHash().parts[0] !== "watch") return;
 
     const k = e.key.toLowerCase();
-    if (k === "j" || e.key === "ArrowDown") {
-      e.preventDefault();
-      if (state.focus) focusStep(1);
-      else moveActive(1);
-    } else if (k === "k" || e.key === "ArrowUp") {
+    /* J = 上一句，K = 下一句；方向键保持直觉（↓ 下、↑ 上） */
+    if (k === "j" || e.key === "ArrowUp") {
       e.preventDefault();
       if (state.focus) focusStep(-1);
       else moveActive(-1);
+    } else if (k === "k" || e.key === "ArrowDown") {
+      e.preventDefault();
+      if (state.focus) focusStep(1);
+      else moveActive(1);
     } else if (e.key === " ") {
       e.preventDefault();
       if (state.focus) {
@@ -1512,7 +1520,7 @@
         if (zh && zh.hidden) {
           zh.hidden = false;
           const b = $(".zh-btn", line);
-          if (b) b.style.display = "none";
+          if (b) b.textContent = "收起中文";
           const note = $(".note-box", line);
           if (note) note.classList.remove("hidden-note");
         } else moveActive(1);
