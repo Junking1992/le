@@ -1,0 +1,3452 @@
+[
+ {
+  "en": "Previously on Prison Break: Welcome home, boss.",
+  "start": 1.23,
+  "end": 5.7
+ },
+ {
+  "en": "Where's Mommy?",
+  "start": 6.01,
+  "end": 9.37
+ },
+ {
+  "en": "Mommy's gonna meet us later, okay?",
+  "start": 6.01,
+  "end": 9.37
+ },
+ {
+  "en": "I'm not a murderer.",
+  "start": 10.78,
+  "end": 13.34
+ },
+ {
+  "en": "Terrence Steadman.",
+  "start": 10.78,
+  "end": 13.34
+ },
+ {
+  "en": "The president's brother.",
+  "start": 13.51,
+  "end": 15.54
+ },
+ {
+  "en": "I didn't do it.",
+  "start": 13.51,
+  "end": 15.54
+ },
+ {
+  "en": "Mr. Steadman, it's contraband.",
+  "start": 15.85,
+  "end": 20.22
+ },
+ {
+  "en": "I brought it to protect myself.",
+  "start": 15.85,
+  "end": 20.22
+ },
+ {
+  "en": "That's what we're here for.",
+  "start": 20.39,
+  "end": 21.58
+ },
+ {
+  "en": "Can I write a check? Because I don't have",
+  "start": 21.75,
+  "end": 23.95
+ },
+ {
+  "en": "Hello, Mrs. Hollander.",
+  "start": 24.12,
+  "end": 26.42
+ },
+ {
+  "en": "Teddy's home.",
+  "start": 26.59,
+  "end": 28.12
+ },
+ {
+  "en": "It's Pam. What's going on?",
+  "start": 28.29,
+  "end": 30.26
+ },
+ {
+  "en": "I love you.",
+  "start": 30.43,
+  "end": 31.12
+ },
+ {
+  "en": "Give Cam a kiss for me, okay?",
+  "start": 31.3,
+  "end": 33.42
+ },
+ {
+  "en": "You call this number again, you're a dead man.",
+  "start": 33.93,
+  "end": 35.96
+ },
+ {
+  "en": "You want my help. I want my job back.",
+  "start": 36.14,
+  "end": 37.87
+ },
+ {
+  "en": "What's your plan?",
+  "start": 38.04,
+  "end": 40.23
+ },
+ {
+  "en": "When brothers get in the van.",
+  "start": 38.04,
+  "end": 40.23
+ },
+ {
+  "en": "It's the last thing they'll do.",
+  "start": 40.41,
+  "end": 41.77
+ },
+ {
+  "en": "Paul Kellerman is ready to move on the caravan outside of Albuquerque.",
+  "start": 41.94,
+  "end": 45.07
+ },
+ {
+  "en": "When it goes down, there's to be lots of bullets flying.",
+  "start": 45.24,
+  "end": 47.74
+ },
+ {
+  "en": "I need you there to make sure Paul Kellerman catches one.",
+  "start": 47.91,
+  "end": 50.61
+ },
+ {
+  "en": "President Reynolds ruined your life...",
+  "start": 58.12,
+  "end": 59.95
+ },
+ {
+  "en": "... she ruined my life. You wanna take the bitch down...",
+  "start": 60.13,
+  "end": 62.56
+ },
+ {
+  "en": "... you found your inside man. But it's gotta be right now.",
+  "start": 62.73,
+  "end": 65.39
+ },
+ {
+  "en": "Let's go.",
+  "start": 65.56,
+  "end": 67.09
+ },
+ {
+  "en": "I know the way out.",
+  "start": 82.48,
+  "end": 84.47
+ },
+ {
+  "en": "I want a team flanking the west.",
+  "start": 105.14,
+  "end": 107.3
+ },
+ {
+  "en": "Give me another team down by the river.",
+  "start": 107.47,
+  "end": 110.47
+ },
+ {
+  "en": "Man down. Give me a Medivac, ASAP.",
+  "start": 117.82,
+  "end": 120.22
+ },
+ {
+  "en": "Officer Tuggle.",
+  "start": 128.23,
+  "end": 129.32
+ },
+ {
+  "en": "Officer Tuggle?",
+  "start": 131.7,
+  "end": 133.63
+ },
+ {
+  "en": "I'm looking for Alexander Mahone. I'm his direct supervisor.",
+  "start": 135.24,
+  "end": 138.43
+ },
+ {
+  "en": "I'm sorry to tell you this, sir, but your boy's been shot.",
+  "start": 138.6,
+  "end": 142.47
+ },
+ {
+  "en": "Who are you?",
+  "start": 149.98,
+  "end": 150.97
+ },
+ {
+  "en": "I used to work for the president.",
+  "start": 151.15,
+  "end": 152.74
+ },
+ {
+  "en": "Why are you helping us?",
+  "start": 153.32,
+  "end": 154.51
+ },
+ {
+  "en": "Lay down on the floor. Now.",
+  "start": 156.09,
+  "end": 158.56
+ },
+ {
+  "en": "Federal agent. Let me through.",
+  "start": 178.44,
+  "end": 179.93
+ },
+ {
+  "en": "Air support is telling us that they saw your vehicle traveling down Route 46.",
+  "start": 180.81,
+  "end": 185.22
+ },
+ {
+  "en": "Forty-six is a possible exit route for the convicts. I was securing it.",
+  "start": 185.38,
+  "end": 189.58
+ },
+ {
+  "en": "No offense, sir, but we're searching every vehicle.",
+  "start": 189.76,
+  "end": 192.66
+ },
+ {
+  "en": "No offense. Either you let me through or you get me a supervisor.",
+  "start": 192.82,
+  "end": 195.82
+ },
+ {
+  "en": "I'm supervising this roadblock, Agent Kellerman.",
+  "start": 196.0,
+  "end": 198.19
+ },
+ {
+  "en": "I'm sorry, but I need you to get out of the vehicle.",
+  "start": 198.7,
+  "end": 201.06
+ },
+ {
+  "en": "Sergeant Humphries.",
+  "start": 201.97,
+  "end": 204.2
+ },
+ {
+  "en": "Burrows and Scofield have been loose for less than1 0 minutes.",
+  "start": 205.14,
+  "end": 207.83
+ },
+ {
+  "en": "That means every second is critical. So if you detain me...",
+  "start": 208.01,
+  "end": 211.2
+ },
+ {
+  "en": "... for one moment more, I will have all of your jobs.",
+  "start": 211.38,
+  "end": 214.28
+ },
+ {
+  "en": "Do you understand me?",
+  "start": 214.45,
+  "end": 216.0
+ },
+ {
+  "en": "Go ahead.",
+  "start": 218.22,
+  "end": 219.58
+ },
+ {
+  "en": "What?",
+  "start": 218.22,
+  "end": 219.58
+ },
+ {
+  "en": "Just let him go.",
+  "start": 220.59,
+  "end": 221.99
+ },
+ {
+  "en": "You still haven't answered my question.",
+  "start": 243.08,
+  "end": 244.91
+ },
+ {
+  "en": "Why am I helping you?",
+  "start": 245.08,
+  "end": 246.6
+ },
+ {
+  "en": "Because the enemy of my enemy is my friend.",
+  "start": 246.91,
+  "end": 249.91
+ },
+ {
+  "en": "You said something about taking down the president. I assume you have a plan.",
+  "start": 250.75,
+  "end": 254.28
+ },
+ {
+  "en": "I do.",
+  "start": 254.72,
+  "end": 256.15
+ },
+ {
+  "en": "I used to have a Great Dane. We had to put her down.",
+  "start": 256.42,
+  "end": 259.65
+ },
+ {
+  "en": "It was very peaceful.",
+  "start": 259.83,
+  "end": 261.09
+ },
+ {
+  "en": "One minute she was breathing, the next she wasn't.",
+  "start": 262.0,
+  "end": 264.62
+ },
+ {
+  "en": "Turn around.",
+  "start": 269.33,
+  "end": 270.36
+ },
+ {
+  "en": "Get up.",
+  "start": 288.29,
+  "end": 289.78
+ },
+ {
+  "en": "Give me one reason why I shouldn't blow your brains out.",
+  "start": 292.23,
+  "end": 294.79
+ },
+ {
+  "en": "Because I can give you the one thing that's gonna set you free.",
+  "start": 294.96,
+  "end": 298.23
+ },
+ {
+  "en": "I know where Terrence Steadman is.",
+  "start": 298.63,
+  "end": 300.19
+ },
+ {
+  "en": "How do you know where Steadman is?",
+  "start": 342.04,
+  "end": 343.98
+ },
+ {
+  "en": "Because I arranged this whole thing.",
+  "start": 344.14,
+  "end": 345.97
+ },
+ {
+  "en": "You arranged to set me up?",
+  "start": 346.14,
+  "end": 347.77
+ },
+ {
+  "en": "Right.",
+  "start": 346.14,
+  "end": 347.77
+ },
+ {
+  "en": "You arranged the killing of all the people I know.",
+  "start": 347.95,
+  "end": 350.78
+ },
+ {
+  "en": "I was given orders. I executed those orders.",
+  "start": 350.95,
+  "end": 353.01
+ },
+ {
+  "en": "And now I have a bull's-eye on my chest, just like you two.",
+  "start": 353.19,
+  "end": 356.12
+ },
+ {
+  "en": "I don't trust him.",
+  "start": 357.36,
+  "end": 359.48
+ },
+ {
+  "en": "Hey.",
+  "start": 357.36,
+  "end": 359.48
+ },
+ {
+  "en": "If I wanted you dead, you'd be dead.",
+  "start": 363.43,
+  "end": 366.87
+ },
+ {
+  "en": "You guys want to keep running, fine.",
+  "start": 367.73,
+  "end": 369.86
+ },
+ {
+  "en": "You wanna be free, get in the car.",
+  "start": 370.04,
+  "end": 372.6
+ },
+ {
+  "en": "Last time I'm gonna offer.",
+  "start": 372.77,
+  "end": 374.87
+ },
+ {
+  "en": "What's up, fish?",
+  "start": 401.67,
+  "end": 403.69
+ },
+ {
+  "en": "Looks like you're having a tough time of it.",
+  "start": 408.17,
+  "end": 410.44
+ },
+ {
+  "en": "I'm all right.",
+  "start": 411.41,
+  "end": 413.97
+ },
+ {
+  "en": "Well, I'm just curious.",
+  "start": 411.41,
+  "end": 413.97
+ },
+ {
+  "en": "Why don't you hang out with the rest of the ex-guards who are locked up here?",
+  "start": 415.18,
+  "end": 418.74
+ },
+ {
+  "en": "Oh, yeah.",
+  "start": 420.12,
+  "end": 421.81
+ },
+ {
+  "en": "There ain't any.",
+  "start": 421.99,
+  "end": 423.58
+ },
+ {
+  "en": "It's just you.",
+  "start": 423.82,
+  "end": 425.38
+ },
+ {
+  "en": "Hey, hold. Hold up, hold up.",
+  "start": 431.03,
+  "end": 432.76
+ },
+ {
+  "en": "Now, I got what's called a mutual beneficial arrangement in my mind.",
+  "start": 433.53,
+  "end": 437.13
+ },
+ {
+  "en": "I'll look out after you. Make sure nobody get up in your mix.",
+  "start": 437.3,
+  "end": 440.33
+ },
+ {
+  "en": "And all you got to do is bring me your dessert after the next meal.",
+  "start": 440.91,
+  "end": 444.37
+ },
+ {
+  "en": "It's real simple.",
+  "start": 445.31,
+  "end": 446.3
+ },
+ {
+  "en": "I'm just looking to do my time. I don't want any trouble.",
+  "start": 446.48,
+  "end": 449.24
+ },
+ {
+  "en": "Yeah. It's what you want, and it's what I want.",
+  "start": 449.42,
+  "end": 452.94
+ },
+ {
+  "en": "Your dessert after the next chow.",
+  "start": 453.75,
+  "end": 456.75
+ },
+ {
+  "en": "You bring it to me. You got it?",
+  "start": 456.92,
+  "end": 458.98
+ },
+ {
+  "en": "No. Wrong guy.",
+  "start": 459.76,
+  "end": 461.69
+ },
+ {
+  "en": "Hey.",
+  "start": 462.76,
+  "end": 463.85
+ },
+ {
+  "en": "Break it up, convicts.",
+  "start": 464.03,
+  "end": 465.29
+ },
+ {
+  "en": "We're good, boss.",
+  "start": 465.63,
+  "end": 467.22
+ },
+ {
+  "en": "We're good.",
+  "start": 467.7,
+  "end": 468.79
+ },
+ {
+  "en": "You bring me my treat...",
+  "start": 471.57,
+  "end": 473.6
+ },
+ {
+  "en": "... or this goes to the next level.",
+  "start": 473.77,
+  "end": 475.67
+ },
+ {
+  "en": "Do you understand?",
+  "start": 476.34,
+  "end": 478.37
+ },
+ {
+  "en": "He asked you a question, boy.",
+  "start": 481.28,
+  "end": 482.58
+ },
+ {
+  "en": "Yeah.",
+  "start": 486.32,
+  "end": 487.62
+ },
+ {
+  "en": "I ain't hear him. You?",
+  "start": 488.15,
+  "end": 490.88
+ },
+ {
+  "en": "I ain't hear him.",
+  "start": 488.15,
+  "end": 490.88
+ },
+ {
+  "en": "Yeah. Okay.",
+  "start": 491.49,
+  "end": 492.92
+ },
+ {
+  "en": "See how easy that was?",
+  "start": 493.09,
+  "end": 494.39
+ },
+ {
+  "en": "We're gonna be good friends now.",
+  "start": 496.9,
+  "end": 498.86
+ },
+ {
+  "en": "There's no reason for you to be scared, Suzie Q...",
+  "start": 518.58,
+  "end": 521.02
+ },
+ {
+  "en": "... because you see, I've forgiven you.",
+  "start": 522.92,
+  "end": 525.36
+ },
+ {
+  "en": "And you, in turn can forgive me for my indiscretions...",
+  "start": 525.73,
+  "end": 530.42
+ },
+ {
+  "en": "... which is far in the past they're nothing but specks in our respective rear views.",
+  "start": 530.6,
+  "end": 536.12
+ },
+ {
+  "en": "It's been such a long time.",
+  "start": 538.77,
+  "end": 540.86
+ },
+ {
+  "en": "You look lovely.",
+  "start": 542.17,
+  "end": 544.04
+ },
+ {
+  "en": "Okay, let's go. Right now. We can go away.",
+  "start": 546.85,
+  "end": 552.08
+ },
+ {
+  "en": "Spend some time together.",
+  "start": 552.52,
+  "end": 553.99
+ },
+ {
+  "en": "Susan, I'm not a Victrola, so please don't play me like one.",
+  "start": 554.15,
+  "end": 557.42
+ },
+ {
+  "en": "There's not a white man's chance in Harlem...",
+  "start": 557.76,
+  "end": 559.88
+ },
+ {
+  "en": "... you'd ever leave your children behind.",
+  "start": 560.06,
+  "end": 562.29
+ },
+ {
+  "en": "I'm sorry.",
+  "start": 564.0,
+  "end": 565.43
+ },
+ {
+  "en": "Don't fret, now.",
+  "start": 565.8,
+  "end": 567.16
+ },
+ {
+  "en": "When you came to Fox River...",
+  "start": 569.27,
+  "end": 571.63
+ },
+ {
+  "en": "... and you spat at me like I was some kind of...",
+  "start": 572.84,
+  "end": 575.67
+ },
+ {
+  "en": "... rabid animal.",
+  "start": 575.98,
+  "end": 577.88
+ },
+ {
+  "en": "I was happy...",
+  "start": 581.65,
+  "end": 583.58
+ },
+ {
+  "en": "... because such a visceral reaction could only come from a woman who still cares.",
+  "start": 584.98,
+  "end": 588.58
+ },
+ {
+  "en": "The children don't know. I didn't wanna scare them...",
+  "start": 591.89,
+  "end": 594.36
+ },
+ {
+  "en": "... so I never told them about you so please don't",
+  "start": 594.53,
+  "end": 597.05
+ },
+ {
+  "en": "That is so perfect.",
+  "start": 597.23,
+  "end": 600.13
+ },
+ {
+  "en": "Because you see what we got here now?",
+  "start": 603.87,
+  "end": 605.93
+ },
+ {
+  "en": "We got ourselves a clean slate.",
+  "start": 608.37,
+  "end": 611.17
+ },
+ {
+  "en": "Right?",
+  "start": 612.61,
+  "end": 613.94
+ },
+ {
+  "en": "So, this is the conspiracy, huh?",
+  "start": 618.88,
+  "end": 622.32
+ },
+ {
+  "en": "A bunch of little boys in suits running around trying to kill each other?",
+  "start": 622.49,
+  "end": 626.55
+ },
+ {
+  "en": "It's pathetic.",
+  "start": 626.96,
+  "end": 628.76
+ },
+ {
+  "en": "Well, you were a little more formidable than we anticipated.",
+  "start": 628.93,
+  "end": 631.79
+ },
+ {
+  "en": "We don't need compliments out of you, jackass.",
+  "start": 632.2,
+  "end": 634.36
+ },
+ {
+  "en": "Oh, yes, there it is.",
+  "start": 634.53,
+  "end": 636.36
+ },
+ {
+  "en": "The winning Burrows personality.",
+  "start": 636.53,
+  "end": 639.23
+ },
+ {
+  "en": "Shut your mouth and drive.",
+  "start": 636.53,
+  "end": 639.23
+ },
+ {
+  "en": "The one we really knew would win over a jury. Good work.",
+  "start": 639.4,
+  "end": 642.17
+ },
+ {
+  "en": "Mr. Kim.",
+  "start": 648.61,
+  "end": 649.81
+ },
+ {
+  "en": "What the hell is going on out there?",
+  "start": 651.08,
+  "end": 652.71
+ },
+ {
+  "en": "It was touch and go for a minute...",
+  "start": 652.88,
+  "end": 654.48
+ },
+ {
+  "en": "... but I got everything handled.",
+  "start": 654.65,
+  "end": 656.09
+ },
+ {
+  "en": "Mahone's been shot.",
+  "start": 656.25,
+  "end": 657.62
+ },
+ {
+  "en": "Yes, I know, Bill, I was there. I saw Burrows pull the trigger.",
+  "start": 657.79,
+  "end": 661.05
+ },
+ {
+  "en": "We lost a valuable asset, but",
+  "start": 661.23,
+  "end": 663.89
+ },
+ {
+  "en": "Mahone's alive.",
+  "start": 661.23,
+  "end": 663.89
+ },
+ {
+  "en": "That's good. It looked bad, so.",
+  "start": 668.2,
+  "end": 670.1
+ },
+ {
+  "en": "Where are Burrows and Scofield?",
+  "start": 670.27,
+  "end": 671.76
+ },
+ {
+  "en": "Burrows and Scofield are dead.",
+  "start": 672.1,
+  "end": 673.66
+ },
+ {
+  "en": "And they're in my SUV. I'm heading out to bury them. Right now.",
+  "start": 673.84,
+  "end": 677.1
+ },
+ {
+  "en": "Don't bury them.",
+  "start": 677.28,
+  "end": 679.21
+ },
+ {
+  "en": "I need visual confirmation.",
+  "start": 680.65,
+  "end": 682.01
+ },
+ {
+  "en": "I'll get you a photo.",
+  "start": 682.98,
+  "end": 684.11
+ },
+ {
+  "en": "I'll say it one more time.",
+  "start": 684.28,
+  "end": 686.25
+ },
+ {
+  "en": "Don't bury them.",
+  "start": 686.99,
+  "end": 689.75
+ },
+ {
+  "en": "You know what would be nice to hear?",
+  "start": 686.99,
+  "end": 689.75
+ },
+ {
+  "en": "A thank you.",
+  "start": 690.09,
+  "end": 691.56
+ },
+ {
+  "en": "I'll report back when they're in the ground.",
+  "start": 691.72,
+  "end": 694.35
+ },
+ {
+  "en": "You leave that on, they'll trace it.",
+  "start": 696.33,
+  "end": 697.92
+ },
+ {
+  "en": "Yeah. Secret Service. It's untraceable, but thanks.",
+  "start": 698.1,
+  "end": 701.97
+ },
+ {
+  "en": "Hey, baby girl.",
+  "start": 719.72,
+  "end": 721.58
+ },
+ {
+  "en": "What?",
+  "start": 726.19,
+  "end": 727.56
+ },
+ {
+  "en": "What's the matter?",
+  "start": 727.73,
+  "end": 729.06
+ },
+ {
+  "en": "Where's Mommy?",
+  "start": 729.43,
+  "end": 732.56
+ },
+ {
+  "en": "Oh, come on.",
+  "start": 729.43,
+  "end": 732.56
+ },
+ {
+  "en": "Now, I told you that Mommy was helping a friend.",
+  "start": 732.73,
+  "end": 735.43
+ },
+ {
+  "en": "All right? Now, we're gonna see her real soon.",
+  "start": 735.6,
+  "end": 737.59
+ },
+ {
+  "en": "When?",
+  "start": 737.77,
+  "end": 739.13
+ },
+ {
+  "en": "Baby, we are gonna be with your mommy real soon.",
+  "start": 741.61,
+  "end": 743.77
+ },
+ {
+  "en": "I promise you that.",
+  "start": 743.94,
+  "end": 745.07
+ },
+ {
+  "en": "Okay?",
+  "start": 745.24,
+  "end": 746.68
+ },
+ {
+  "en": "I don't believe you.",
+  "start": 748.31,
+  "end": 749.3
+ },
+ {
+  "en": "Dede.",
+  "start": 753.35,
+  "end": 754.41
+ },
+ {
+  "en": "Dede.",
+  "start": 754.59,
+  "end": 756.18
+ },
+ {
+  "en": "Yo, Trey. It's me, man.",
+  "start": 764.76,
+  "end": 766.63
+ },
+ {
+  "en": "What's up?",
+  "start": 766.8,
+  "end": 769.36
+ },
+ {
+  "en": "Yo, what's going on with Kacee?",
+  "start": 766.8,
+  "end": 769.36
+ },
+ {
+  "en": "I'm at the courthouse. She's getting arraigned soon.",
+  "start": 769.53,
+  "end": 771.87
+ },
+ {
+  "en": "Okay. Well, you talk to her? Is she all right?",
+  "start": 772.04,
+  "end": 774.03
+ },
+ {
+  "en": "She's in jail, so, no, she's not all right. What the hell happened?",
+  "start": 774.21,
+  "end": 777.7
+ },
+ {
+  "en": "You think I wanted it this way?",
+  "start": 777.88,
+  "end": 780.71
+ },
+ {
+  "en": "Whatever.",
+  "start": 777.88,
+  "end": 780.71
+ },
+ {
+  "en": "Gotta go. My lawyer's gonna be here any minute.",
+  "start": 780.88,
+  "end": 782.97
+ },
+ {
+  "en": "No, no. Listen, listen.",
+  "start": 783.15,
+  "end": 784.81
+ },
+ {
+  "en": "Now, look, I want you to tell Kacee to put it all on me, all right?",
+  "start": 784.98,
+  "end": 788.61
+ },
+ {
+  "en": "And she didn't know what to do. She was scared. Okay? All that.",
+  "start": 788.99,
+  "end": 792.18
+ },
+ {
+  "en": "Yeah, I already told her to do that.",
+  "start": 792.49,
+  "end": 794.46
+ },
+ {
+  "en": "I'll do the talking.",
+  "start": 809.41,
+  "end": 810.9
+ },
+ {
+  "en": "Owen Kravecki?",
+  "start": 811.08,
+  "end": 812.51
+ },
+ {
+  "en": "That's me. Hey.",
+  "start": 811.08,
+  "end": 812.51
+ },
+ {
+  "en": "Hey. Ben and Phil.",
+  "start": 812.68,
+  "end": 814.48
+ },
+ {
+  "en": "Let's go, before our wives figure out this is a fishing trip.",
+  "start": 815.45,
+  "end": 818.35
+ },
+ {
+  "en": "Where's your gear?",
+  "start": 818.52,
+  "end": 821.21
+ },
+ {
+  "en": "I keep it up north. Okay?",
+  "start": 818.52,
+  "end": 821.21
+ },
+ {
+  "en": "How long is the flight?",
+  "start": 821.39,
+  "end": 822.98
+ },
+ {
+  "en": "An hour, 40.",
+  "start": 823.15,
+  "end": 824.71
+ },
+ {
+  "en": "We don't have a choice.",
+  "start": 839.71,
+  "end": 841.57
+ },
+ {
+  "en": "Glad you're awake.",
+  "start": 858.16,
+  "end": 859.95
+ },
+ {
+  "en": "Collarbone and rotator cuff.",
+  "start": 861.49,
+  "end": 863.05
+ },
+ {
+  "en": "Six inches to the right, and you're dead.",
+  "start": 863.23,
+  "end": 865.42
+ },
+ {
+  "en": "Yeah, he just woke up.",
+  "start": 866.16,
+  "end": 867.56
+ },
+ {
+  "en": "Mr. Mahone.",
+  "start": 877.61,
+  "end": 879.1
+ },
+ {
+  "en": "Bill Kim. You're a lucky man.",
+  "start": 879.28,
+  "end": 881.8
+ },
+ {
+  "en": "Am I?",
+  "start": 882.31,
+  "end": 884.75
+ },
+ {
+  "en": "Kellerman finished the job you couldn't.",
+  "start": 882.31,
+  "end": 884.75
+ },
+ {
+  "en": "But he, unfortunately, is still out there...",
+  "start": 885.12,
+  "end": 888.48
+ },
+ {
+  "en": "... and he's a loose end.",
+  "start": 888.65,
+  "end": 890.42
+ },
+ {
+  "en": "Finish what you were supposed to take care of.",
+  "start": 891.26,
+  "end": 893.25
+ },
+ {
+  "en": "Something funny?",
+  "start": 894.73,
+  "end": 896.22
+ },
+ {
+  "en": "Kellerman's more of a loose end than you realize.",
+  "start": 897.06,
+  "end": 900.46
+ },
+ {
+  "en": "He shot me.",
+  "start": 900.87,
+  "end": 902.13
+ },
+ {
+  "en": "The guy you wanted to double-cross screwed you first.",
+  "start": 902.63,
+  "end": 907.13
+ },
+ {
+  "en": "Scofield and Burrows?",
+  "start": 907.31,
+  "end": 908.57
+ },
+ {
+  "en": "Are probably alive...",
+  "start": 908.74,
+  "end": 911.4
+ },
+ {
+  "en": "... and on the run with Kellerman.",
+  "start": 911.91,
+  "end": 913.43
+ },
+ {
+  "en": "Have a good day, Kimmy.",
+  "start": 916.51,
+  "end": 919.04
+ },
+ {
+  "en": "We neutered Kellerman.",
+  "start": 924.56,
+  "end": 926.49
+ },
+ {
+  "en": "He doesn't even officially exist anymore.",
+  "start": 926.66,
+  "end": 928.75
+ },
+ {
+  "en": "He knows everything.",
+  "start": 931.93,
+  "end": 933.83
+ },
+ {
+  "en": "Reports have been coming in from New Mexico officials...",
+  "start": 944.31,
+  "end": 946.8
+ },
+ {
+  "en": "... that escaped convicts Michael Scofield and Lincoln Burrows...",
+  "start": 946.98,
+  "end": 950.04
+ },
+ {
+  "en": "... have somehow managed to extricate themselves...",
+  "start": 950.52,
+  "end": 952.92
+ },
+ {
+  "en": "... from a transport van that was bringing them back to the Chicago area.",
+  "start": 953.09,
+  "end": 956.71
+ },
+ {
+  "en": "According to this early information, the convicts were....",
+  "start": 956.89,
+  "end": 959.55
+ },
+ {
+  "en": "You're great.",
+  "start": 959.73,
+  "end": 961.28
+ },
+ {
+  "en": "T op-notch. I swear to God.",
+  "start": 961.99,
+  "end": 964.62
+ },
+ {
+  "en": "Don't get yourself worked up, Mr. Steadman.",
+  "start": 964.9,
+  "end": 967.26
+ },
+ {
+  "en": "I was supposed to have my life back by now.",
+  "start": 967.43,
+  "end": 970.73
+ },
+ {
+  "en": "Playing golf...",
+  "start": 972.37,
+  "end": 973.63
+ },
+ {
+  "en": "... going to movies...",
+  "start": 974.04,
+  "end": 975.47
+ },
+ {
+  "en": "... seeing people. But because you guys can't get a handle...",
+  "start": 975.98,
+  "end": 979.97
+ },
+ {
+  "en": "... on an engineer and a petty crook...",
+  "start": 980.35,
+  "end": 982.31
+ },
+ {
+  "en": "... I've been a ship in a bottle for over three years.",
+  "start": 982.75,
+  "end": 985.91
+ },
+ {
+  "en": "You're perfectly safe here.",
+  "start": 986.09,
+  "end": 987.81
+ },
+ {
+  "en": "I wish.",
+  "start": 994.36,
+  "end": 995.99
+ },
+ {
+  "en": "I just spoke to Kim.",
+  "start": 1001.17,
+  "end": 1002.69
+ },
+ {
+  "en": "He wants you to finish the job.",
+  "start": 1003.87,
+  "end": 1005.84
+ },
+ {
+  "en": "Yeah?",
+  "start": 1006.0,
+  "end": 1007.44
+ },
+ {
+  "en": "That's not gonna happen.",
+  "start": 1007.97,
+  "end": 1009.17
+ },
+ {
+  "en": "This isn't a request.",
+  "start": 1009.61,
+  "end": 1011.01
+ },
+ {
+  "en": "And this isn't a negotiation.",
+  "start": 1011.18,
+  "end": 1013.8
+ },
+ {
+  "en": "Kim and Kellerman can try to kill each other all day long.",
+  "start": 1014.08,
+  "end": 1017.51
+ },
+ {
+  "en": "But I'm out.",
+  "start": 1019.12,
+  "end": 1020.95
+ },
+ {
+  "en": "You must've forgotten how discreet we've been with what we know.",
+  "start": 1021.25,
+  "end": 1024.12
+ },
+ {
+  "en": "Go tell about Shales. In fact, I will.",
+  "start": 1024.29,
+  "end": 1026.22
+ },
+ {
+  "en": "I killed a predator, a man who tortured and raped women...",
+  "start": 1026.62,
+  "end": 1029.18
+ },
+ {
+  "en": "... and I buried him in my back yard. I'll do the time.",
+  "start": 1029.36,
+  "end": 1032.12
+ },
+ {
+  "en": "I don't care anymore. I'm out.",
+  "start": 1032.3,
+  "end": 1034.2
+ },
+ {
+  "en": "Is that clear enough for you?",
+  "start": 1035.03,
+  "end": 1036.73
+ },
+ {
+  "en": "My man.",
+  "start": 1072.2,
+  "end": 1073.57
+ },
+ {
+  "en": "That's delicious.",
+  "start": 1081.88,
+  "end": 1083.78
+ },
+ {
+  "en": "Whoa, hold up there. Hold, hold up.",
+  "start": 1085.85,
+  "end": 1087.41
+ },
+ {
+  "en": "We got a problem.",
+  "start": 1087.85,
+  "end": 1089.58
+ },
+ {
+  "en": "That's one brownie.",
+  "start": 1090.42,
+  "end": 1092.12
+ },
+ {
+  "en": "There's five of my boys.",
+  "start": 1092.59,
+  "end": 1094.18
+ },
+ {
+  "en": "You see the position you put me in?",
+  "start": 1095.46,
+  "end": 1097.72
+ },
+ {
+  "en": "They gotta stand with their stomachs growling while I savor this delicious treat.",
+  "start": 1097.93,
+  "end": 1101.66
+ },
+ {
+  "en": "That makes me look like a real ass.",
+  "start": 1102.17,
+  "end": 1105.47
+ },
+ {
+  "en": "Are you trying to make me look like an ass?",
+  "start": 1110.08,
+  "end": 1112.37
+ },
+ {
+  "en": "You said the deal was I was supposed to bring you one dessert.",
+  "start": 1112.91,
+  "end": 1115.71
+ },
+ {
+  "en": "Yeah. Well.",
+  "start": 1115.88,
+  "end": 1117.91
+ },
+ {
+  "en": "I'm a fickle bitch.",
+  "start": 1118.08,
+  "end": 1119.48
+ },
+ {
+  "en": "Now, it's five desserts...",
+  "start": 1120.12,
+  "end": 1122.28
+ },
+ {
+  "en": "... every meal.",
+  "start": 1122.59,
+  "end": 1124.15
+ },
+ {
+  "en": "Now, if you can't come up with that...",
+  "start": 1125.69,
+  "end": 1128.79
+ },
+ {
+  "en": "... there are other ways to making me happy.",
+  "start": 1129.29,
+  "end": 1133.49
+ },
+ {
+  "en": "Well, I got some other candy on me, if you want some of that.",
+  "start": 1134.0,
+  "end": 1136.87
+ },
+ {
+  "en": "Well, break it out, bitch. It's all good. You all want some candy?",
+  "start": 1137.07,
+  "end": 1140.63
+ },
+ {
+  "en": "Guard's coming.",
+  "start": 1149.45,
+  "end": 1150.71
+ },
+ {
+  "en": "If memory serves, I was at Storytime Village that day too.",
+  "start": 1167.6,
+  "end": 1172.0
+ },
+ {
+  "en": "And I'm not in any of these pictures?",
+  "start": 1172.3,
+  "end": 1174.0
+ },
+ {
+  "en": "Could've sworn I was.",
+  "start": 1174.17,
+  "end": 1176.44
+ },
+ {
+  "en": "I'm just teasing, baby.",
+  "start": 1178.11,
+  "end": 1179.17
+ },
+ {
+  "en": "Every woman has burned the photographs of her paramour...",
+  "start": 1179.81,
+  "end": 1182.64
+ },
+ {
+  "en": "... only to later realize her love burns even hotter than the flames she used.",
+  "start": 1182.81,
+  "end": 1187.58
+ },
+ {
+  "en": "Please.",
+  "start": 1191.82,
+  "end": 1193.26
+ },
+ {
+  "en": "Teddy.",
+  "start": 1199.8,
+  "end": 1200.99
+ },
+ {
+  "en": "Uncle Teddy.",
+  "start": 1201.23,
+  "end": 1202.6
+ },
+ {
+  "en": "How's my girl been?",
+  "start": 1204.5,
+  "end": 1205.77
+ },
+ {
+  "en": "Good.",
+  "start": 1205.94,
+  "end": 1206.96
+ },
+ {
+  "en": "You still getting more A's than an aardvark?",
+  "start": 1207.47,
+  "end": 1209.41
+ },
+ {
+  "en": "Yeah. I missed you.",
+  "start": 1209.58,
+  "end": 1213.07
+ },
+ {
+  "en": "Oh, same here, shortcake.",
+  "start": 1209.58,
+  "end": 1213.07
+ },
+ {
+  "en": "Yes, I painted my hair.",
+  "start": 1213.24,
+  "end": 1214.58
+ },
+ {
+  "en": "Look at you, Zack.",
+  "start": 1215.68,
+  "end": 1217.15
+ },
+ {
+  "en": "You are a boy no more.",
+  "start": 1218.32,
+  "end": 1220.31
+ },
+ {
+  "en": "I'm gonna have to lend you my razor soon enough.",
+  "start": 1220.48,
+  "end": 1222.71
+ },
+ {
+  "en": "What are you doing here? Mom said you got a job on an oil rig.",
+  "start": 1224.32,
+  "end": 1227.49
+ },
+ {
+  "en": "That's right. Right out in the middle of the ocean.",
+  "start": 1229.43,
+  "end": 1231.73
+ },
+ {
+  "en": "But those metallic beasts are dangerous.",
+  "start": 1231.9,
+  "end": 1234.46
+ },
+ {
+  "en": "Got myself injured.",
+  "start": 1234.63,
+  "end": 1236.1
+ },
+ {
+  "en": "Don't be, don't be frightened now, sugar.",
+  "start": 1236.57,
+  "end": 1238.97
+ },
+ {
+  "en": "The good lawyers at Dewey, Cheatem and Howe...",
+  "start": 1239.3,
+  "end": 1241.7
+ },
+ {
+  "en": "... got me a million bones for every digit I lost.",
+  "start": 1241.91,
+  "end": 1246.43
+ },
+ {
+  "en": "Five million dollars?",
+  "start": 1246.61,
+  "end": 1248.14
+ },
+ {
+  "en": "Which means with all that cash...",
+  "start": 1251.38,
+  "end": 1253.61
+ },
+ {
+  "en": "... I can do anything I want now. And all I want to do...",
+  "start": 1253.79,
+  "end": 1257.05
+ },
+ {
+  "en": "... is spend all my money and all my time...",
+  "start": 1257.22,
+  "end": 1260.16
+ },
+ {
+  "en": "... with you.",
+  "start": 1260.99,
+  "end": 1262.65
+ },
+ {
+  "en": "What's the neighborhood like?",
+  "start": 1275.57,
+  "end": 1277.6
+ },
+ {
+  "en": "No neighborhood. The house sits on 50 acres.",
+  "start": 1277.78,
+  "end": 1279.74
+ },
+ {
+  "en": "We coming out the way we go in?",
+  "start": 1279.91,
+  "end": 1281.28
+ },
+ {
+  "en": "No. There's a back road we'll take.",
+  "start": 1281.45,
+  "end": 1283.04
+ },
+ {
+  "en": "How many guards?",
+  "start": 1283.21,
+  "end": 1285.12
+ },
+ {
+  "en": "Usually none.",
+  "start": 1283.21,
+  "end": 1285.12
+ },
+ {
+  "en": "At this point, I really couldn't tell you.",
+  "start": 1285.28,
+  "end": 1287.95
+ },
+ {
+  "en": "The second I feel this thing going bad...",
+  "start": 1288.42,
+  "end": 1290.94
+ },
+ {
+  "en": "... you get a bullet in the head.",
+  "start": 1291.12,
+  "end": 1293.06
+ },
+ {
+  "en": "I'd expect nothing less.",
+  "start": 1295.03,
+  "end": 1297.15
+ },
+ {
+  "en": "I will inform you every half-hour.",
+  "start": 1298.56,
+  "end": 1301.0
+ },
+ {
+  "en": "Understood.",
+  "start": 1301.4,
+  "end": 1302.56
+ },
+ {
+  "en": "Private jet was chartered by Owen Kravecki this morning.",
+  "start": 1302.73,
+  "end": 1305.2
+ },
+ {
+  "en": "Headed where?",
+  "start": 1305.37,
+  "end": 1307.5
+ },
+ {
+  "en": "Montana.",
+  "start": 1305.37,
+  "end": 1307.5
+ },
+ {
+  "en": "Stop it from taking off.",
+  "start": 1308.77,
+  "end": 1309.83
+ },
+ {
+  "en": "It's already on the ground, sir.",
+  "start": 1310.01,
+  "end": 1312.34
+ },
+ {
+  "en": "Call Steadman.",
+  "start": 1313.01,
+  "end": 1314.0
+ },
+ {
+  "en": "If that's my sister, I would like to speak to her.",
+  "start": 1320.32,
+  "end": 1323.31
+ },
+ {
+  "en": "Yes?",
+  "start": 1324.89,
+  "end": 1326.41
+ },
+ {
+  "en": "Right away, sir.",
+  "start": 1330.23,
+  "end": 1331.66
+ },
+ {
+  "en": "Evac.",
+  "start": 1332.73,
+  "end": 1333.92
+ },
+ {
+  "en": "Mr. Steadman, do you have a jacket? We need to leave.",
+  "start": 1334.4,
+  "end": 1336.83
+ },
+ {
+  "en": "Leave? What? No.",
+  "start": 1337.0,
+  "end": 1338.8
+ },
+ {
+  "en": "Agents'll be arriving shortly to take you to a safe house.",
+  "start": 1338.97,
+  "end": 1341.84
+ },
+ {
+  "en": "What do I need to be kept safe from?",
+  "start": 1342.01,
+  "end": 1343.7
+ },
+ {
+  "en": "Do you have a jacket, sir?",
+  "start": 1344.08,
+  "end": 1345.24
+ },
+ {
+  "en": "I don't wanna leave. I wanna talk to my sister.",
+  "start": 1345.41,
+  "end": 1348.4
+ },
+ {
+  "en": "I've been authorized to use force if necessary.",
+  "start": 1348.61,
+  "end": 1351.01
+ },
+ {
+  "en": "Now, is there anything you'd like to bring?",
+  "start": 1351.18,
+  "end": 1353.08
+ },
+ {
+  "en": "My meds.",
+  "start": 1357.12,
+  "end": 1359.21
+ },
+ {
+  "en": "Go with him. Car's here in five minutes.",
+  "start": 1360.99,
+  "end": 1363.69
+ },
+ {
+  "en": "Well, I don't know, Stella. She won't come out.",
+  "start": 1368.07,
+  "end": 1371.37
+ },
+ {
+  "en": "Who wants to be up in the trailer all day, huh? Would you?",
+  "start": 1372.04,
+  "end": 1375.9
+ },
+ {
+  "en": "Exactly. Me, neither.",
+  "start": 1376.07,
+  "end": 1377.4
+ },
+ {
+  "en": "You feel like making a pie or something?",
+  "start": 1378.11,
+  "end": 1379.91
+ },
+ {
+  "en": "A little cherry, or lemon meringue, or",
+  "start": 1380.08,
+  "end": 1382.48
+ },
+ {
+  "en": "Daddy.",
+  "start": 1382.65,
+  "end": 1384.14
+ },
+ {
+  "en": "Is Mommy in trouble, like you?",
+  "start": 1384.52,
+  "end": 1387.95
+ },
+ {
+  "en": "Sweetheart, come here.",
+  "start": 1394.76,
+  "end": 1396.16
+ },
+ {
+  "en": "Come here.",
+  "start": 1397.13,
+  "end": 1398.53
+ },
+ {
+  "en": "Now, you listen to me, okay?",
+  "start": 1402.77,
+  "end": 1404.79
+ },
+ {
+  "en": "Mommy did nothing wrong.",
+  "start": 1405.64,
+  "end": 1408.37
+ },
+ {
+  "en": "She's helping out a friend.",
+  "start": 1409.34,
+  "end": 1411.07
+ },
+ {
+  "en": "Okay?",
+  "start": 1412.51,
+  "end": 1413.91
+ },
+ {
+  "en": "Okay, let me go see how Mommy's doing, all right?",
+  "start": 1417.92,
+  "end": 1420.35
+ },
+ {
+  "en": "I wanna talk to her.",
+  "start": 1420.52,
+  "end": 1422.18
+ },
+ {
+  "en": "No, no, no.",
+  "start": 1420.52,
+  "end": 1422.18
+ },
+ {
+  "en": "You sit here, like a good little girl, okay?",
+  "start": 1422.35,
+  "end": 1424.58
+ },
+ {
+  "en": "Don't give me that.",
+  "start": 1425.32,
+  "end": 1427.02
+ },
+ {
+  "en": "Hello.",
+  "start": 1427.73,
+  "end": 1430.22
+ },
+ {
+  "en": "Things are looking up.",
+  "start": 1427.73,
+  "end": 1430.22
+ },
+ {
+  "en": "That's what I wanted to hear. Kick it down to me.",
+  "start": 1430.39,
+  "end": 1432.62
+ },
+ {
+  "en": "Her lawyer knows what he's doing. He thinks he can get the bail reduced.",
+  "start": 1433.03,
+  "end": 1436.3
+ },
+ {
+  "en": "Good. All right, well, listen. When Kacee gets out...",
+  "start": 1436.47,
+  "end": 1439.03
+ },
+ {
+  "en": "... I want you to deliver this message for me, okay?",
+  "start": 1439.94,
+  "end": 1442.27
+ },
+ {
+  "en": "Tell her...",
+  "start": 1443.14,
+  "end": 1444.3
+ },
+ {
+  "en": "... that we can all get lost.",
+  "start": 1444.74,
+  "end": 1446.04
+ },
+ {
+  "en": "You want her to jump bail now?",
+  "start": 1446.21,
+  "end": 1448.3
+ },
+ {
+  "en": "Be glad you ain't in front of my face, I'd have my hands around your neck.",
+  "start": 1448.48,
+  "end": 1451.78
+ },
+ {
+  "en": "Punk, just deliver the message.",
+  "start": 1451.95,
+  "end": 1453.44
+ },
+ {
+  "en": "Okay. Then what you all gonna do? Go live in a cave?",
+  "start": 1453.62,
+  "end": 1456.05
+ },
+ {
+  "en": "I got a plan, all right?",
+  "start": 1457.46,
+  "end": 1459.62
+ },
+ {
+  "en": "Let's hear it.",
+  "start": 1457.46,
+  "end": 1459.62
+ },
+ {
+  "en": "This guy back in my unit...",
+  "start": 1461.79,
+  "end": 1463.92
+ },
+ {
+  "en": "... when I was in Iraq.",
+  "start": 1464.1,
+  "end": 1465.99
+ },
+ {
+  "en": "He used to go to Alaska, work at these fish hatcheries, man.",
+  "start": 1466.6,
+  "end": 1469.53
+ },
+ {
+  "en": "They pay you cash.",
+  "start": 1469.7,
+  "end": 1470.86
+ },
+ {
+  "en": "And nobody asks questions.",
+  "start": 1471.04,
+  "end": 1473.63
+ },
+ {
+  "en": "Alaska?",
+  "start": 1471.04,
+  "end": 1473.63
+ },
+ {
+  "en": "Yeah, Alaska, man. They don't bother you up there, man.",
+  "start": 1473.81,
+  "end": 1477.04
+ },
+ {
+  "en": "You know, me, Kacee and Dede, we could be a family again. You feel me?",
+  "start": 1477.24,
+  "end": 1480.47
+ },
+ {
+  "en": "Man, you don't quit.",
+  "start": 1480.88,
+  "end": 1481.87
+ },
+ {
+  "en": "You're damned straight I don't quit.",
+  "start": 1482.05,
+  "end": 1484.11
+ },
+ {
+  "en": "Do I get to know where I'm going?",
+  "start": 1486.25,
+  "end": 1487.98
+ },
+ {
+  "en": "You'll get all the information you need upon arrival.",
+  "start": 1488.15,
+  "end": 1491.32
+ },
+ {
+  "en": "Yes?",
+  "start": 1492.36,
+  "end": 1494.15
+ },
+ {
+  "en": "Move Steadman to Location Beta.",
+  "start": 1492.36,
+  "end": 1494.15
+ },
+ {
+  "en": "We're sending a car.",
+  "start": 1494.33,
+  "end": 1495.55
+ },
+ {
+  "en": "It's already here, sir.",
+  "start": 1496.36,
+  "end": 1497.52
+ },
+ {
+  "en": "Couldn't be.",
+  "start": 1498.86,
+  "end": 1500.39
+ },
+ {
+  "en": "The car just left.",
+  "start": 1500.97,
+  "end": 1502.02
+ },
+ {
+  "en": "Weapons down.",
+  "start": 1504.57,
+  "end": 1506.13
+ },
+ {
+  "en": "Now.",
+  "start": 1507.67,
+  "end": 1508.97
+ },
+ {
+  "en": "Down.",
+  "start": 1516.62,
+  "end": 1518.11
+ },
+ {
+  "en": "Put your weapons down.",
+  "start": 1518.28,
+  "end": 1519.72
+ },
+ {
+  "en": "Don't get stupid.",
+  "start": 1524.46,
+  "end": 1525.55
+ },
+ {
+  "en": "Put your weapons down on the ground. Now.",
+  "start": 1525.76,
+  "end": 1527.78
+ },
+ {
+  "en": "Terrence, step away. Get in the car.",
+  "start": 1529.19,
+  "end": 1531.13
+ },
+ {
+  "en": "You look pretty good for a dead man.",
+  "start": 1532.63,
+  "end": 1534.33
+ },
+ {
+  "en": "Get in the car.",
+  "start": 1534.5,
+  "end": 1536.13
+ },
+ {
+  "en": "Wait, wait, wait.",
+  "start": 1534.5,
+  "end": 1536.13
+ },
+ {
+  "en": "Who's there?",
+  "start": 1536.3,
+  "end": 1538.53
+ },
+ {
+  "en": "It's Kellerman. He's got Steadman.",
+  "start": 1536.3,
+  "end": 1538.53
+ },
+ {
+  "en": "Do not let him escape.",
+  "start": 1539.27,
+  "end": 1540.9
+ },
+ {
+  "en": "Kill Steadman. Kill them all, now.",
+  "start": 1543.01,
+  "end": 1545.2
+ },
+ {
+  "en": "Paul, please. Don't-- Don't kill me.",
+  "start": 1550.75,
+  "end": 1554.74
+ },
+ {
+  "en": "Get in. Get in the car.",
+  "start": 1550.75,
+  "end": 1554.74
+ },
+ {
+  "en": "Let's go.",
+  "start": 1559.96,
+  "end": 1561.52
+ },
+ {
+  "en": "Vomiting. It's the worst side effect of anesthesia.",
+  "start": 1573.24,
+  "end": 1576.23
+ },
+ {
+  "en": "That should be the last of it.",
+  "start": 1577.84,
+  "end": 1579.61
+ },
+ {
+  "en": "You figure I'm on empty by now?",
+  "start": 1580.41,
+  "end": 1583.51
+ },
+ {
+  "en": "Yeah.",
+  "start": 1580.41,
+  "end": 1583.51
+ },
+ {
+  "en": "Pam.",
+  "start": 1588.99,
+  "end": 1590.39
+ },
+ {
+  "en": "Alex, Cameron's been hurt.",
+  "start": 1592.22,
+  "end": 1593.92
+ },
+ {
+  "en": "What happened? -It was a car. Hit and run.",
+  "start": 1594.09,
+  "end": 1596.69
+ },
+ {
+  "en": "He's in the hospital. His leg is broken in two places.",
+  "start": 1596.86,
+  "end": 1599.95
+ },
+ {
+  "en": "I'll be on the next flight to Colorado.",
+  "start": 1600.13,
+  "end": 1602.03
+ },
+ {
+  "en": "He's in surgery now.",
+  "start": 1602.2,
+  "end": 1604.86
+ },
+ {
+  "en": "I'll be right there. Just hold on.",
+  "start": 1602.2,
+  "end": 1604.86
+ },
+ {
+  "en": "They won't let me seem him. They called me.",
+  "start": 1605.04,
+  "end": 1607.16
+ },
+ {
+  "en": "I got right here and they won't let me see him.",
+  "start": 1607.34,
+  "end": 1609.53
+ },
+ {
+  "en": "Pam, please, just keep it together until I get there. Can you do that for me?",
+  "start": 1609.71,
+  "end": 1613.14
+ },
+ {
+  "en": "Please. Please hurry.",
+  "start": 1613.31,
+  "end": 1615.34
+ },
+ {
+  "en": "Mr. Mahone, you cannot get on a plane.",
+  "start": 1615.78,
+  "end": 1617.64
+ },
+ {
+  "en": "You need to stay at least another day for observation.",
+  "start": 1617.82,
+  "end": 1620.38
+ },
+ {
+  "en": "You've been shot.",
+  "start": 1620.55,
+  "end": 1621.81
+ },
+ {
+  "en": "Mr. Mahone, please.",
+  "start": 1622.45,
+  "end": 1624.05
+ },
+ {
+  "en": "I've gotta go see my son.",
+  "start": 1624.99,
+  "end": 1627.52
+ },
+ {
+  "en": "Mr. Mahone, I understand.",
+  "start": 1624.99,
+  "end": 1627.52
+ },
+ {
+  "en": "Please. At least stay and talk to a doctor.",
+  "start": 1627.69,
+  "end": 1629.85
+ },
+ {
+  "en": "Taxi. Taxi.",
+  "start": 1630.03,
+  "end": 1632.55
+ },
+ {
+  "en": "How's your boy?",
+  "start": 1637.43,
+  "end": 1639.03
+ },
+ {
+  "en": "Tib-fib fractures are bad.",
+  "start": 1640.07,
+  "end": 1642.04
+ },
+ {
+  "en": "But if the growth plate's affected there's a whole host of problems.",
+  "start": 1642.21,
+  "end": 1645.64
+ },
+ {
+  "en": "You made a mistake.",
+  "start": 1646.14,
+  "end": 1648.34
+ },
+ {
+  "en": "No, you did.",
+  "start": 1646.14,
+  "end": 1648.34
+ },
+ {
+  "en": "You think you can just quit like you work at a post office?",
+  "start": 1648.51,
+  "end": 1651.21
+ },
+ {
+  "en": "Now, you're needed back in.",
+  "start": 1651.58,
+  "end": 1654.21
+ },
+ {
+  "en": "Go clean up your mess.",
+  "start": 1654.39,
+  "end": 1655.58
+ },
+ {
+  "en": "Maybe there won't be another accident on the streets of Durango, Colorado.",
+  "start": 1655.75,
+  "end": 1659.99
+ },
+ {
+  "en": "Understand?",
+  "start": 1662.79,
+  "end": 1664.26
+ },
+ {
+  "en": "Every road shut down. Every car searched.",
+  "start": 1672.74,
+  "end": 1674.8
+ },
+ {
+  "en": "I don't care if it's a group of nuns. Their camper gets turned inside out.",
+  "start": 1674.97,
+  "end": 1678.41
+ },
+ {
+  "en": "Logistically speaking, every road's gonna",
+  "start": 1678.58,
+  "end": 1681.77
+ },
+ {
+  "en": "It's Montana.",
+  "start": 1678.58,
+  "end": 1681.77
+ },
+ {
+  "en": "Not Manhattan.",
+  "start": 1681.98,
+  "end": 1683.64
+ },
+ {
+  "en": "Get it done.",
+  "start": 1683.98,
+  "end": 1686.61
+ },
+ {
+  "en": "Yes, sir.",
+  "start": 1683.98,
+  "end": 1686.61
+ },
+ {
+  "en": "If we get a camera, we can take a picture of him holding a newspaper.",
+  "start": 1691.46,
+  "end": 1694.72
+ },
+ {
+  "en": "If we put that online, that'll prove he's alive.",
+  "start": 1694.89,
+  "end": 1697.12
+ },
+ {
+  "en": "It'll prove that we found a guy that looks kind of like the president's brother.",
+  "start": 1697.3,
+  "end": 1701.23
+ },
+ {
+  "en": "Fingerprints. Dental records.",
+  "start": 1701.4,
+  "end": 1703.89
+ },
+ {
+  "en": "We whitewashed him.",
+  "start": 1701.4,
+  "end": 1703.89
+ },
+ {
+  "en": "We pulled his teeth, burned off his fingerprints.",
+  "start": 1704.07,
+  "end": 1706.54
+ },
+ {
+  "en": "DNA.",
+  "start": 1706.7,
+  "end": 1707.69
+ },
+ {
+  "en": "To compare against the homeless guy we killed and put in Steadman's car.",
+  "start": 1707.87,
+  "end": 1711.5
+ },
+ {
+  "en": "But we destroyed all exterior DNA samples...",
+  "start": 1711.68,
+  "end": 1713.77
+ },
+ {
+  "en": "... so that there'd be nothing to compare them to.",
+  "start": 1713.94,
+  "end": 1716.35
+ },
+ {
+  "en": "There's gotta be someone somewhere who can identify this man.",
+  "start": 1716.58,
+  "end": 1719.28
+ },
+ {
+  "en": "Which is why we did the surgery.",
+  "start": 1719.45,
+  "end": 1721.01
+ },
+ {
+  "en": "Cheekbones raised two centimeters, ears lowered a quarter of an inch.",
+  "start": 1721.19,
+  "end": 1724.62
+ },
+ {
+  "en": "Not so much that someone wouldn't recognize him...",
+  "start": 1724.79,
+  "end": 1727.12
+ },
+ {
+  "en": "... but enough that any forensic comparison of a photograph of that man...",
+  "start": 1727.29,
+  "end": 1730.52
+ },
+ {
+  "en": "... would conclude that he is a look-alike.",
+  "start": 1730.69,
+  "end": 1732.72
+ },
+ {
+  "en": "A hoax. Trust me.",
+  "start": 1732.9,
+  "end": 1734.92
+ },
+ {
+  "en": "We are very good at what we do.",
+  "start": 1735.1,
+  "end": 1737.62
+ },
+ {
+  "en": "Please, just let me go.",
+  "start": 1740.7,
+  "end": 1742.17
+ },
+ {
+  "en": "Terrence, you made every man in this room a prisoner, including yourself.",
+  "start": 1742.34,
+  "end": 1746.37
+ },
+ {
+  "en": "It's time to set us free.",
+  "start": 1747.31,
+  "end": 1750.77
+ },
+ {
+  "en": "Nothing you do will work.",
+  "start": 1747.31,
+  "end": 1750.77
+ },
+ {
+  "en": "They will not let it",
+  "start": 1750.95,
+  "end": 1754.58
+ },
+ {
+  "en": "Cut the victim act, Terrence.",
+  "start": 1750.95,
+  "end": 1754.58
+ },
+ {
+  "en": "He's happy to play along when he was lining his pockets...",
+  "start": 1754.75,
+  "end": 1757.31
+ },
+ {
+  "en": "... with taxpayer money funneled through EcoField. And then...",
+  "start": 1757.49,
+  "end": 1760.22
+ },
+ {
+  "en": "... when the indictment is about to fall...",
+  "start": 1760.39,
+  "end": 1762.52
+ },
+ {
+  "en": "... who do you come running to for help, Terrence?",
+  "start": 1762.69,
+  "end": 1764.89
+ },
+ {
+  "en": "We're gonna stay here for a day or two until they think we're thousand miles away.",
+  "start": 1768.87,
+  "end": 1773.13
+ },
+ {
+  "en": "And then we're gonna make our way to D. C.",
+  "start": 1773.7,
+  "end": 1775.5
+ },
+ {
+  "en": "Okay?",
+  "start": 1775.81,
+  "end": 1777.14
+ },
+ {
+  "en": "So that's the plan? We take him to a city crawling with Company and Feds?",
+  "start": 1778.88,
+  "end": 1782.84
+ },
+ {
+  "en": "And government agents still in power working from the inside with your father.",
+  "start": 1783.48,
+  "end": 1787.35
+ },
+ {
+  "en": "People who can get that pain in the ass to safely tell his story on the record.",
+  "start": 1787.55,
+  "end": 1791.65
+ },
+ {
+  "en": "We just stroll right into the lion's den then, huh? Pray we don't get mauled.",
+  "start": 1791.82,
+  "end": 1795.28
+ },
+ {
+  "en": "I don't think they're gonna come to Montana, so we're gonna go to them.",
+  "start": 1795.66,
+  "end": 1799.15
+ },
+ {
+  "en": "No. Leave her alone.",
+  "start": 1802.0,
+  "end": 1803.37
+ },
+ {
+  "en": "What do you want with her?",
+  "start": 1803.54,
+  "end": 1807.63
+ },
+ {
+  "en": "What I want is to date her.",
+  "start": 1803.54,
+  "end": 1807.63
+ },
+ {
+  "en": "What do you want...?",
+  "start": 1808.07,
+  "end": 1810.77
+ },
+ {
+  "en": "I'll make you some more popcorn.",
+  "start": 1812.24,
+  "end": 1814.64
+ },
+ {
+  "en": "Honey.",
+  "start": 1812.24,
+  "end": 1814.64
+ },
+ {
+  "en": "If any of us could eat any more corn, I'd be amazed.",
+  "start": 1814.81,
+  "end": 1818.87
+ },
+ {
+  "en": "See what I did there, Gracey?",
+  "start": 1819.05,
+  "end": 1820.35
+ },
+ {
+  "en": "Indian word for corn is \"maize,\" and I just said, \"amazed.\"",
+  "start": 1820.52,
+  "end": 1824.95
+ },
+ {
+  "en": "I don't get it. I'm corn-fused.",
+  "start": 1825.12,
+  "end": 1828.85
+ },
+ {
+  "en": "You are smarter than a bee sting.",
+  "start": 1829.66,
+  "end": 1831.49
+ },
+ {
+  "en": "The second female president of these United States, right here...",
+  "start": 1831.66,
+  "end": 1835.22
+ },
+ {
+  "en": "... watching TV with us.",
+  "start": 1835.4,
+  "end": 1837.46
+ },
+ {
+  "en": "Look what I did.",
+  "start": 1840.51,
+  "end": 1841.87
+ },
+ {
+  "en": "Honey, that's all right.",
+  "start": 1842.24,
+  "end": 1844.23
+ },
+ {
+  "en": "No, I'll get a rag.",
+  "start": 1842.24,
+  "end": 1844.23
+ },
+ {
+  "en": "No, I can",
+  "start": 1844.41,
+  "end": 1845.77
+ },
+ {
+  "en": "I thought we had wiped the slate clean.",
+  "start": 1851.98,
+  "end": 1854.25
+ },
+ {
+  "en": "Please.",
+  "start": 1856.75,
+  "end": 1857.85
+ },
+ {
+  "en": "I thought we had put the past where it belonged.",
+  "start": 1858.46,
+  "end": 1861.76
+ },
+ {
+  "en": "We did. We did put the past where it belonged.",
+  "start": 1861.93,
+  "end": 1866.09
+ },
+ {
+  "en": "Do not lie to me, woman.",
+  "start": 1866.93,
+  "end": 1869.26
+ },
+ {
+  "en": "After turn coating me to the authorities...",
+  "start": 1869.43,
+  "end": 1871.66
+ },
+ {
+  "en": "... and everything we had. After breaking my heart into so many pieces...",
+  "start": 1871.9,
+  "end": 1875.43
+ },
+ {
+  "en": "... that I will never be able to find them all you can at least do me the favor...",
+  "start": 1875.61,
+  "end": 1879.81
+ },
+ {
+  "en": "... as to not stand there and lie to my face.",
+  "start": 1879.98,
+  "end": 1882.67
+ },
+ {
+  "en": "Mom?",
+  "start": 1882.85,
+  "end": 1884.31
+ },
+ {
+  "en": "Zack, you get your ass back on that couch.",
+  "start": 1884.78,
+  "end": 1886.77
+ },
+ {
+  "en": "Get Gracey. Go.",
+  "start": 1889.32,
+  "end": 1890.41
+ },
+ {
+  "en": "Give that to me.",
+  "start": 1890.59,
+  "end": 1892.15
+ },
+ {
+  "en": "I gave you all a chance.",
+  "start": 1901.23,
+  "end": 1902.82
+ },
+ {
+  "en": "Remember that.",
+  "start": 1904.27,
+  "end": 1905.76
+ },
+ {
+  "en": "Open up 22.",
+  "start": 1932.96,
+  "end": 1935.02
+ },
+ {
+  "en": "Opening 22.",
+  "start": 1935.2,
+  "end": 1937.36
+ },
+ {
+  "en": "Dude, you're crazy.",
+  "start": 1939.77,
+  "end": 1942.4
+ },
+ {
+  "en": "Is that what the other cons are saying?",
+  "start": 1942.57,
+  "end": 1944.3
+ },
+ {
+  "en": "Yeah.",
+  "start": 1944.47,
+  "end": 1946.17
+ },
+ {
+  "en": "Good.",
+  "start": 1944.47,
+  "end": 1946.17
+ },
+ {
+  "en": "But you took it to Banks. I don't think you wanna be messing with him, man.",
+  "start": 1946.34,
+  "end": 1949.8
+ },
+ {
+  "en": "I'll mess with anybody tries to punk me out.",
+  "start": 1949.98,
+  "end": 1953.42
+ },
+ {
+  "en": "Hey, you know, I've just been testing you.",
+  "start": 1953.72,
+  "end": 1957.35
+ },
+ {
+  "en": "Yeah, well, the test results came back...",
+  "start": 1957.52,
+  "end": 1960.39
+ },
+ {
+  "en": "... and top bunk's mine now.",
+  "start": 1960.56,
+  "end": 1962.36
+ },
+ {
+  "en": "You got a problem with that?",
+  "start": 1962.53,
+  "end": 1964.65
+ },
+ {
+  "en": "Hey, what's up, Stolte?",
+  "start": 1975.31,
+  "end": 1978.71
+ },
+ {
+  "en": "You just screwed up, Brad. Big time.",
+  "start": 1975.31,
+  "end": 1978.71
+ },
+ {
+  "en": "No. I had a message to send and that message got delivered.",
+  "start": 1978.88,
+  "end": 1981.94
+ },
+ {
+  "en": "The guy you schlocked, Banks.",
+  "start": 1982.11,
+  "end": 1984.51
+ },
+ {
+  "en": "He's got connections with the guards working nights.",
+  "start": 1984.68,
+  "end": 1988.17
+ },
+ {
+  "en": "Word is, Banks is gonna have you pulled out of your cell tonight.",
+  "start": 1988.35,
+  "end": 1992.76
+ },
+ {
+  "en": "Well, can't you do nothing?",
+  "start": 1993.16,
+  "end": 1995.25
+ },
+ {
+  "en": "Yeah.",
+  "start": 1993.16,
+  "end": 1995.25
+ },
+ {
+  "en": "I can warn you which is what I'm doing.",
+  "start": 1995.43,
+  "end": 1998.22
+ },
+ {
+  "en": "Can't you talk to some of the guys working nights?",
+  "start": 1998.4,
+  "end": 2000.66
+ },
+ {
+  "en": "They're working nights because you put them on nights.",
+  "start": 2000.83,
+  "end": 2003.43
+ },
+ {
+  "en": "You should've treated them better.",
+  "start": 2003.6,
+  "end": 2005.5
+ },
+ {
+  "en": "They ain't gonna do you any favors.",
+  "start": 2005.67,
+  "end": 2007.4
+ },
+ {
+  "en": "Well, I treated you right, didn't I?",
+  "start": 2007.57,
+  "end": 2010.01
+ },
+ {
+  "en": "Come on, Stolte.",
+  "start": 2010.17,
+  "end": 2011.73
+ },
+ {
+  "en": "Can't you do something? Please.",
+  "start": 2011.91,
+  "end": 2014.14
+ },
+ {
+  "en": "You did treat me right...",
+  "start": 2014.31,
+  "end": 2016.21
+ },
+ {
+  "en": "... but there is nothing I can do now...",
+  "start": 2016.38,
+  "end": 2018.54
+ },
+ {
+  "en": "... except warn you...",
+  "start": 2018.72,
+  "end": 2020.62
+ },
+ {
+  "en": "... watch your back.",
+  "start": 2020.79,
+  "end": 2022.84
+ },
+ {
+  "en": "We can use the roads that the rangers use in Glacier National Park.",
+  "start": 2031.13,
+  "end": 2034.1
+ },
+ {
+  "en": "They don't patrol them at night. Get up into Canada, head east. Cut through New York.",
+  "start": 2034.77,
+  "end": 2038.63
+ },
+ {
+  "en": "And the borders won't be a problem. No, nobody'll look for us there.",
+  "start": 2038.8,
+  "end": 2043.04
+ },
+ {
+  "en": "This fun for you, Terrence? Really?",
+  "start": 2043.27,
+  "end": 2046.73
+ },
+ {
+  "en": "No, this isn't fun.",
+  "start": 2043.27,
+  "end": 2046.73
+ },
+ {
+  "en": "What was fun was when Caroline and I would talk about you...",
+  "start": 2046.91,
+  "end": 2049.57
+ },
+ {
+  "en": "... and the schoolboy crush that you had on her.",
+  "start": 2049.91,
+  "end": 2052.54
+ },
+ {
+  "en": "He proposed to her.",
+  "start": 2052.85,
+  "end": 2054.37
+ },
+ {
+  "en": "You actually thought that you would be the first husband? Serf who would be king?",
+  "start": 2057.66,
+  "end": 2061.72
+ },
+ {
+  "en": "Caroline.",
+  "start": 2061.89,
+  "end": 2063.42
+ },
+ {
+  "en": "We laughed so hard",
+  "start": 2064.33,
+  "end": 2065.32
+ },
+ {
+  "en": "You stood and watched them kill Veronica.",
+  "start": 2067.5,
+  "end": 2069.4
+ },
+ {
+  "en": "Burrows.",
+  "start": 2069.57,
+  "end": 2071.56
+ },
+ {
+  "en": "And you did nothing.",
+  "start": 2069.57,
+  "end": 2071.56
+ },
+ {
+  "en": "Burrows.",
+  "start": 2071.74,
+  "end": 2073.47
+ },
+ {
+  "en": "She died because of you.",
+  "start": 2071.74,
+  "end": 2073.47
+ },
+ {
+  "en": "Linc",
+  "start": 2082.81,
+  "end": 2084.21
+ },
+ {
+  "en": "Shut up.",
+  "start": 2082.81,
+  "end": 2084.21
+ },
+ {
+  "en": "Burrows, he has no value to us dead. He has no identity.",
+  "start": 2084.75,
+  "end": 2087.95
+ },
+ {
+  "en": "Kill him, he's just a John Doe.",
+  "start": 2088.12,
+  "end": 2090.61
+ },
+ {
+  "en": "Put your gun down.",
+  "start": 2088.12,
+  "end": 2090.61
+ },
+ {
+  "en": "When he puts his down.",
+  "start": 2090.79,
+  "end": 2093.02
+ },
+ {
+  "en": "Linc, we're so close.",
+  "start": 2090.79,
+  "end": 2093.02
+ },
+ {
+  "en": "Was it worth it? Killing those people? Ruining my life?",
+  "start": 2093.82,
+  "end": 2097.16
+ },
+ {
+  "en": "Get a handle on your brother.",
+  "start": 2097.33,
+  "end": 2100.13
+ },
+ {
+  "en": "Shut up. You're not helping.",
+  "start": 2097.33,
+  "end": 2100.13
+ },
+ {
+  "en": "Linc, you don't want to do this.",
+  "start": 2100.3,
+  "end": 2101.93
+ },
+ {
+  "en": "Trust me.",
+  "start": 2102.1,
+  "end": 2103.57
+ },
+ {
+  "en": "This isn't what you want.",
+  "start": 2103.73,
+  "end": 2105.13
+ },
+ {
+  "en": "You don't want to do this, okay? Trust me.",
+  "start": 2105.67,
+  "end": 2109.2
+ },
+ {
+  "en": "So many people dead.",
+  "start": 2126.69,
+  "end": 2128.75
+ },
+ {
+  "en": "And he gets to live.",
+  "start": 2130.96,
+  "end": 2132.12
+ },
+ {
+  "en": "Hello? Hello?",
+  "start": 2138.54,
+  "end": 2139.97
+ },
+ {
+  "en": "They denied bail.",
+  "start": 2140.51,
+  "end": 2141.56
+ },
+ {
+  "en": "What?",
+  "start": 2141.91,
+  "end": 2144.34
+ },
+ {
+  "en": "The judge didn't buy that it was all you.",
+  "start": 2141.91,
+  "end": 2144.34
+ },
+ {
+  "en": "Kacee's going into the system now.",
+  "start": 2144.51,
+  "end": 2146.17
+ },
+ {
+  "en": "Aiding an escaped con. She's looking at major time, man.",
+  "start": 2146.34,
+  "end": 2149.18
+ },
+ {
+  "en": "Now, I want you to tell her lawyer, all right, you listen to me. You tell her lawyer...",
+  "start": 2159.72,
+  "end": 2164.53
+ },
+ {
+  "en": "I love you.",
+  "start": 2167.26,
+  "end": 2168.79
+ },
+ {
+  "en": "... tell her lawyer I'll turn myself in, okay?",
+  "start": 2169.67,
+  "end": 2172.1
+ },
+ {
+  "en": "No.",
+  "start": 2169.67,
+  "end": 2172.1
+ },
+ {
+  "en": "Kacee says you need to run.",
+  "start": 2172.27,
+  "end": 2173.6
+ },
+ {
+  "en": "If you turn yourself in, Dede won't have either of you.",
+  "start": 2173.77,
+  "end": 2176.57
+ },
+ {
+  "en": "And they'll just throw her into foster care.",
+  "start": 2176.94,
+  "end": 2179.1
+ },
+ {
+  "en": "Look, I'm gonna hang up this phone right now...",
+  "start": 2179.84,
+  "end": 2182.04
+ },
+ {
+  "en": "... because I might say something I'll regret.",
+  "start": 2182.21,
+  "end": 2184.34
+ },
+ {
+  "en": "Yo You just take care of Dede.",
+  "start": 2184.51,
+  "end": 2188.01
+ },
+ {
+  "en": "You know, Zack...",
+  "start": 2200.46,
+  "end": 2202.23
+ },
+ {
+  "en": "... my daddy wasn't really in the picture much when I was growing up.",
+  "start": 2202.4,
+  "end": 2205.53
+ },
+ {
+  "en": "As a result, I never really learned the art of carpentry.",
+  "start": 2206.87,
+  "end": 2210.81
+ },
+ {
+  "en": "But I figure Jesus was a carpenter, and his daddy wasn't around to teach him...",
+  "start": 2211.41,
+  "end": 2215.68
+ },
+ {
+  "en": "... so I taught myself.",
+  "start": 2215.85,
+  "end": 2217.64
+ },
+ {
+  "en": "Over time, I got to be a pretty good swinger of the hammer.",
+  "start": 2219.22,
+  "end": 2223.21
+ },
+ {
+  "en": "Now, the good news is...",
+  "start": 2224.22,
+  "end": 2226.82
+ },
+ {
+  "en": "... unlike my papa and the Great Almighty, I am here...",
+  "start": 2226.99,
+  "end": 2231.89
+ },
+ {
+  "en": "... for good.",
+  "start": 2232.06,
+  "end": 2233.62
+ },
+ {
+  "en": "Don't make no mistake about it.",
+  "start": 2234.57,
+  "end": 2236.62
+ },
+ {
+  "en": "We will be a family...",
+  "start": 2238.94,
+  "end": 2241.23
+ },
+ {
+  "en": "... if it kills us.",
+  "start": 2242.81,
+  "end": 2244.93
+ },
+ {
+  "en": "It's so sweet.",
+  "start": 2263.43,
+  "end": 2265.45
+ },
+ {
+  "en": "Car's out front. Let's move out.",
+  "start": 2272.8,
+  "end": 2275.47
+ },
+ {
+  "en": "These two will never make it in a car together.",
+  "start": 2275.64,
+  "end": 2277.7
+ },
+ {
+  "en": "You keep your brother in check.",
+  "start": 2277.88,
+  "end": 2280.31
+ },
+ {
+  "en": "You don't know him.",
+  "start": 2277.88,
+  "end": 2280.31
+ },
+ {
+  "en": "Then get my gun from him. We don't have time for this.",
+  "start": 2280.95,
+  "end": 2283.51
+ },
+ {
+  "en": "You still think you're running this show, don't you?",
+  "start": 2283.68,
+  "end": 2285.98
+ },
+ {
+  "en": "You still think I'm not?",
+  "start": 2286.15,
+  "end": 2287.95
+ },
+ {
+  "en": "Yes, I'd like the number for Channel 1 1 News, please.",
+  "start": 2298.09,
+  "end": 2300.79
+ },
+ {
+  "en": "What are you doing?",
+  "start": 2300.97,
+  "end": 2302.12
+ },
+ {
+  "en": "This is not the plan. Hang up.",
+  "start": 2302.5,
+  "end": 2304.06
+ },
+ {
+  "en": "Yes, connect me. I'll hold.",
+  "start": 2304.24,
+  "end": 2305.43
+ },
+ {
+  "en": "Scofield, you call the news, they call the cops.",
+  "start": 2305.6,
+  "end": 2308.4
+ },
+ {
+  "en": "Yes, put me through.",
+  "start": 2309.71,
+  "end": 2310.9
+ },
+ {
+  "en": "Hang up.",
+  "start": 2311.07,
+  "end": 2312.51
+ },
+ {
+  "en": "Hang up the phone now.",
+  "start": 2316.08,
+  "end": 2317.91
+ },
+ {
+  "en": "Hang it up.",
+  "start": 2319.85,
+  "end": 2321.25
+ },
+ {
+  "en": "Channel Eleven News. Can I help you?",
+  "start": 2323.52,
+  "end": 2325.78
+ },
+ {
+  "en": "This is Michael Scofield.",
+  "start": 2326.46,
+  "end": 2328.01
+ },
+ {
+  "en": "I'm at the Cutback Motel, room 1 1.",
+  "start": 2328.19,
+  "end": 2330.42
+ },
+ {
+  "en": "And I want to turn myself in.",
+  "start": 2335.0,
+  "end": 2337.06
+ },
+ {
+  "en": "Bradlee.",
+  "start": 2341.04,
+  "end": 2344.67
+ },
+ {
+  "en": "Bradlee.",
+  "start": 2346.94,
+  "end": 2350.74
+ },
+ {
+  "en": "Warden's gone home, bitch.",
+  "start": 2354.42,
+  "end": 2357.11
+ },
+ {
+  "en": "The mice are gonna play.",
+  "start": 2357.29,
+  "end": 2359.22
+ },
+ {
+  "en": "Bradlee.",
+  "start": 2359.59,
+  "end": 2363.15
+ },
+ {
+  "en": "Bradlee.",
+  "start": 2363.83,
+  "end": 2366.8
+ },
+ {
+  "en": "Bradlee.",
+  "start": 2367.66,
+  "end": 2370.22
+ },
+ {
+  "en": "If anything jumps off, you get my back. I won't forget it.",
+  "start": 2372.74,
+  "end": 2376.2
+ },
+ {
+  "en": "Why don't you just forget it right now?",
+  "start": 2376.37,
+  "end": 2378.74
+ },
+ {
+  "en": "Here in this cell, you're top bunk. Out there...",
+  "start": 2378.91,
+  "end": 2382.94
+ },
+ {
+  "en": "... you're on your own.",
+  "start": 2383.41,
+  "end": 2385.78
+ },
+ {
+  "en": "Bradlee.",
+  "start": 2386.12,
+  "end": 2389.71
+ },
+ {
+  "en": "You want a piece of me, you sons of bitches? Come and get me.",
+  "start": 2390.42,
+  "end": 2393.98
+ },
+ {
+  "en": "You hear me?",
+  "start": 2394.16,
+  "end": 2395.75
+ },
+ {
+  "en": "I ain't scared of you.",
+  "start": 2396.33,
+  "end": 2398.89
+ },
+ {
+  "en": "I ain't scared of nothing.",
+  "start": 2399.06,
+  "end": 2401.36
+ },
+ {
+  "en": "Bradlee.",
+  "start": 2404.87,
+  "end": 2408.43
+ },
+ {
+  "en": "Start praying.",
+  "start": 2414.61,
+  "end": 2416.14
+ },
+ {
+  "en": "Yes?",
+  "start": 2426.76,
+  "end": 2427.75
+ },
+ {
+  "en": "Mr. Kim.",
+  "start": 2428.12,
+  "end": 2429.68
+ },
+ {
+  "en": "I just wanted you to know...",
+  "start": 2430.66,
+  "end": 2432.86
+ },
+ {
+  "en": "... that I'm getting back to work.",
+  "start": 2433.53,
+  "end": 2435.66
+ },
+ {
+  "en": "Good.",
+  "start": 2437.87,
+  "end": 2439.27
+ },
+ {
+  "en": "So I take it you got my message.",
+  "start": 2440.54,
+  "end": 2442.37
+ },
+ {
+  "en": "Oh, yeah.",
+  "start": 2443.64,
+  "end": 2445.16
+ },
+ {
+  "en": "Loud and clear.",
+  "start": 2447.01,
+  "end": 2448.84
+ },
+ {
+  "en": "Please don't do this. Please, come on, please.",
+  "start": 2459.92,
+  "end": 2462.12
+ },
+ {
+  "en": "I'm sorry, Terrence, it's too late. The press is already on their way.",
+  "start": 2462.29,
+  "end": 2465.56
+ },
+ {
+  "en": "You can put the guns away now.",
+  "start": 2465.73,
+  "end": 2467.46
+ },
+ {
+  "en": "This goes wrong, you guys are on your own.",
+  "start": 2467.86,
+  "end": 2470.59
+ },
+ {
+  "en": "No, if I go back home. Okay? Let me, please. I'll go home.",
+  "start": 2470.77,
+  "end": 2474.07
+ },
+ {
+  "en": "You can't go home, Terrence. None of us can, okay?",
+  "start": 2474.24,
+  "end": 2476.43
+ },
+ {
+  "en": "So just relax. Keep your head.",
+  "start": 2476.61,
+  "end": 2478.63
+ },
+ {
+  "en": "Okay, okay, okay.",
+  "start": 2480.54,
+  "end": 2482.57
+ },
+ {
+  "en": "Terrence.",
+  "start": 2483.15,
+  "end": 2484.48
+ },
+ {
+  "en": "Terrence, Terrence.",
+  "start": 2483.15,
+  "end": 2484.48
+ },
+ {
+  "en": "I'm leaving.",
+  "start": 2484.65,
+  "end": 2486.01
+ },
+ {
+  "en": "Terrence. We can't let you do that, Terrence.",
+  "start": 2489.55,
+  "end": 2491.54
+ },
+ {
+  "en": "All we need is your mouth. I will shoot out your knees right now.",
+  "start": 2491.72,
+  "end": 2494.82
+ },
+ {
+  "en": "I never liked you, Paul. I won't hesitate to take your life.",
+  "start": 2494.99,
+  "end": 2498.26
+ },
+ {
+  "en": "All right, just....",
+  "start": 2501.73,
+  "end": 2503.43
+ },
+ {
+  "en": "Terrence, listen to me.",
+  "start": 2503.6,
+  "end": 2505.03
+ },
+ {
+  "en": "Just listen.",
+  "start": 2505.2,
+  "end": 2506.69
+ },
+ {
+  "en": "Terrence, for once in your life, do the right thing.",
+  "start": 2507.07,
+  "end": 2510.16
+ },
+ {
+  "en": "All right?",
+  "start": 2510.64,
+  "end": 2512.07
+ },
+ {
+  "en": "So many people have suffered because of this, because of you.",
+  "start": 2512.51,
+  "end": 2515.78
+ },
+ {
+  "en": "But when the press get here...",
+  "start": 2516.48,
+  "end": 2518.21
+ },
+ {
+  "en": "... you can tell the truth.",
+  "start": 2518.38,
+  "end": 2520.35
+ },
+ {
+  "en": "You can end this.",
+  "start": 2520.52,
+  "end": 2522.21
+ },
+ {
+  "en": "What is in it for me? Disgrace? Life in prison?",
+  "start": 2524.12,
+  "end": 2527.42
+ },
+ {
+  "en": "You're already in prison, Terrence.",
+  "start": 2527.59,
+  "end": 2529.29
+ },
+ {
+  "en": "How many people have to die so you can stay in some cabin...",
+  "start": 2529.83,
+  "end": 2532.49
+ },
+ {
+  "en": "... in the woods? It's over.",
+  "start": 2532.66,
+  "end": 2534.6
+ },
+ {
+  "en": "Okay.",
+  "start": 2543.21,
+  "end": 2544.61
+ },
+ {
+  "en": "Okay.",
+  "start": 2545.91,
+  "end": 2547.4
+ },
+ {
+  "en": "Sorry.",
+  "start": 2554.52,
+  "end": 2556.54
+ },
+ {
+  "en": "Terrence, no.",
+  "start": 2554.52,
+  "end": 2556.54
+ },
+ {
+  "en": "We have to go.",
+  "start": 2578.78,
+  "end": 2580.24
+ },
+ {
+  "en": "Go where? We've got Steadman.",
+  "start": 2580.41,
+  "end": 2582.34
+ },
+ {
+  "en": "No, we have nothing.",
+  "start": 2582.51,
+  "end": 2584.24
+ },
+ {
+  "en": "All we got is a John Doe.",
+  "start": 2586.88,
+  "end": 2588.85
+ },
+ {
+  "en": "Michael.",
+  "start": 2592.66,
+  "end": 2594.21
+ },
+ {
+  "en": "Michael, let's go.",
+  "start": 2595.66,
+  "end": 2597.89
+ }
+]

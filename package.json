@@ -1,0 +1,15 @@
+{
+  "name": "le",
+  "version": "1.0.0",
+  "description": "用美剧英文字幕学英语的本地网页应用。**双击 `index.html` 就能用**，不需要服务器、不需要安装、不需要联网（朗读用浏览器自带语音）。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

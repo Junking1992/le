@@ -1,0 +1,31 @@
+# 依赖
+node_modules/
+package-lock.json
+
+# 系统 / 编辑器
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# 临时文件（调试探针、截图、缓存）
+# 注意：tools/_diff.py 和 tools/_show.py 是正式脚本，不在此列
+_probe.html
+tools/_probe*
+tools/_v.html
+tools/_shot.png
+tools/_t*.js
+tools/_x.js
+tools/_mk.js
+tools/_ph*.js
+tools/_optest.js
+tools/_csstest.js
+tools/_ft.js
+tools/_st.js
+tools/__pycache__/
+__pycache__/
+*.pyc
+
+# 日志
+*.log
