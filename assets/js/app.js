@@ -1700,6 +1700,9 @@
       const span = ring.querySelector("span");
       if (span) span.textContent = r.pct + "%";
     }
+    // 同步进度面板里的「X / Y 句」计数
+    const countB = $(".side .ep-progress b");
+    if (countB) countB.textContent = r.done + " / " + r.total + " 句";
     applyFilter();
     return p.learned.indexOf(i) >= 0;
   }
