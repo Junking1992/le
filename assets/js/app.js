@@ -1451,9 +1451,8 @@
       else if (k === "zh") focusToggleZh();
       else if (k === "star") {
         toggleLearned(state.active);
-        // 只切换按钮的「已掌握」状态样式，避免整块 stage 重绘导致的布局抖动
-        const lp = (progress[epKey(state.showId, state.sNo, state.eNo)] || {}).learned || [];
-        f.classList.toggle("on", lp.indexOf(state.active) >= 0);
+        // 点「已掌握」后自动跳到下一句
+        focusStep(1);
       }
       return;
     }
