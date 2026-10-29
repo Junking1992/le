@@ -821,42 +821,118 @@
     return Array.from(found).sort();
   }
 
-  /* ---------- 逐句模式 ---------- */
-  function renderFocus() {
+  /* ---------- 逐句模式 ----------
+     卡片（.focus）只在「进入逐句模式」时搭一次骨架（mountFocus）；
+     「上一句 / 下一句」只改文本和按钮状态（syncFocusUI），
+     不再重写 #stage.innerHTML。
+
+     旧实现每切一句就把整块卡片连同径向渐变背景、边框、按钮、
+     进度条一起销毁重建，再叠上 .focus > * 的入场动画（带 .02/.05/.08s
+     的依次延迟），于是每次切句整个 stage 都要重新淡入一次 ——
+     看到的就是整片区域刷新闪动。 */
+  function mountFocus() {
     const stage = $("#stage");
     if (!stage) return;
-    const ep = state.ep;
-    const i = state.active;
-    const l = ep.lines[i] || { en: "", zh: "" };
-    const key = epKey(state.showId, state.sNo, state.eNo);
-    const learned = ((progress[key] || {}).learned || []).indexOf(i) >= 0;
-    const idxs = visibleIndexes();
-    const pos = idxs.indexOf(i);
-
     stage.innerHTML =
-      '<div class="focus">' +
-      '<div class="f-index">S' + state.sNo + "E" + state.eNo + " · " + (pos + 1) + " / " + idxs.length + "</div>" +
-      '<div class="f-en">' + tokenize(l.en) + "</div>" +
-      (l.zh ? '<div class="f-zh hidden" id="f-zh">点击「显示中文」或按空格</div>' : "") +
-      (l.note ? '<div class="f-note" hidden id="f-note"><span class="note-k">讲解</span>' + esc(l.note) + "</div>" : "") +
+      '<div class="focus enter" id="focus">' +
+      '<div class="f-index" id="f-index"></div>' +
+      '<div class="f-sentence" id="f-sentence">' +
+      '<div class="f-en" id="f-en" aria-live="polite"></div>' +
+      '<div class="f-zh hidden" id="f-zh"></div>' +
+      '<div class="f-note" id="f-note" hidden></div>' +
+      "</div>" +
       '<div class="f-actions">' +
       '<button class="btn" data-f="prev">← 上一句</button>' +
       '<button class="btn" data-f="speak">🔊 朗读</button>' +
       '<button class="btn" data-f="zh">显示中文</button>' +
-      '<button class="btn' + (learned ? " on" : "") + '" data-f="star">标记已掌握</button>' +
+      '<button class="btn" data-f="star">标记已掌握</button>' +
       '<button class="btn primary" data-f="next">下一句 →</button>' +
       "</div>" +
-      '<div class="f-progress">' + Math.round(((pos + 1) / idxs.length) * 100) + "% · 按 F 或点「列表模式」退出</div>" +
+      '<div class="f-progress" id="f-progress"></div>' +
       "</div>";
+    syncFocusUI();
+    // 入场动画只播这一次；之后切句不再触发
+    setTimeout(() => {
+      const card = $("#focus");
+      if (card) card.classList.remove("enter");
+    }, 420);
+  }
+
+  /* 只更新内容，不动 DOM 结构（同一批节点复用，不触发整块重绘） */
+  function syncFocusUI() {
+    const ep = state.ep;
+    if (!ep) return;
+    const i = state.active;
+    const l = ep.lines[i] || { en: "", zh: "" };
+    const idxs = visibleIndexes();
+    const pos = idxs.indexOf(i);
+    const total = idxs.length;
+
+    const indexEl = $("#f-index");
+    if (indexEl)
+      indexEl.textContent = "S" + state.sNo + "E" + state.eNo + " · " + (pos + 1) + " / " + total;
+
+    const enEl = $("#f-en");
+    if (enEl) enEl.innerHTML = tokenize(l.en);
+
+    const zhEl = $("#f-zh");
+    if (zhEl) {
+      zhEl.hidden = !l.zh;
+      zhEl.classList.toggle("hidden", !!l.zh);
+      zhEl.textContent = l.zh ? "点击「显示中文」或按空格" : "";
+    }
+
+    const noteEl = $("#f-note");
+    if (noteEl) {
+      noteEl.hidden = !l.note;
+      noteEl.innerHTML = l.note ? '<span class="note-k">讲解</span>' + esc(l.note) : "";
+    }
+
+    syncFocusStar();
+
+    const progEl = $("#f-progress");
+    if (progEl)
+      progEl.textContent =
+        (total ? Math.round(((pos + 1) / total) * 100) : 0) + "% · 按 F 或点「列表模式」退出";
+  }
+
+  function syncFocusStar() {
+    const learned =
+      ((progress[epKey(state.showId, state.sNo, state.eNo)] || {}).learned || []).indexOf(state.active) >= 0;
+    const btn = $('[data-f="star"]');
+    if (btn) btn.classList.toggle("on", learned);
+  }
+
+  /* 切句动画：只给句子块做一次带方向感的淡入位移。
+     连按时先取消上一条，避免动画排队、越按越慢。 */
+  function animateSentence(dir) {
+    const el = $("#f-sentence");
+    if (!el || typeof el.animate !== "function") return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    el.getAnimations().forEach((a) => a.cancel());
+    el.animate(
+      [
+        { opacity: 0, transform: "translateY(" + (dir > 0 ? 12 : -12) + "px)" },
+        { opacity: 1, transform: "none" },
+      ],
+      // fill:both —— 动画进入 pending 的那一帧也保持首帧（opacity:0），
+      // 避免新句子先裸闪一帧再开始淡入
+      { duration: 200, easing: "cubic-bezier(.2,.8,.3,1)", fill: "both" }
+    );
   }
 
   function focusStep(d) {
     const idxs = visibleIndexes();
+    if (!idxs.length) return;
     const pos = idxs.indexOf(state.active);
     const nextPos = Math.min(idxs.length - 1, Math.max(0, pos + d));
+    // 已经在首句 / 末句：不重绘、不重复朗读
+    if (nextPos === pos && idxs[nextPos] === state.active) return;
     state.active = idxs[nextPos];
     saveCursor();
-    renderFocus();
+    hidePop();
+    syncFocusUI();
+    animateSentence(d);
     if (d > 0) speak(state.ep.lines[state.active].en);
   }
 
@@ -1325,7 +1401,7 @@
         if (state.focus) {
           const idxs = visibleIndexes();
           if (idxs.indexOf(state.active) < 0) state.active = idxs[0] || 0;
-          renderFocus();
+          syncFocusUI();
         } else {
           // 切换到另一模式时，重新渲染并自动滚动到激活的卡片
           renderLines(true);
@@ -1355,7 +1431,7 @@
       if (state.focus) {
         const first = $(".line.active") || $(".line");
         state.active = first ? +first.dataset.i : 0;
-        renderFocus();
+        mountFocus();
         $("#focus-btn").textContent = "列表模式";
       } else {
         render();
@@ -1560,7 +1636,7 @@
     } else if (k === "m") {
       const i = state.focus ? state.active : +($(".line.active") || { dataset: { i: 0 } }).dataset.i;
       toggleLearned(i);
-      if (state.focus) renderFocus();
+      if (state.focus) syncFocusStar();
     } else if (k === "f") {
       const b = $("#focus-btn");
       if (b) b.click();

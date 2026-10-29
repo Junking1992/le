@@ -756,7 +756,6 @@ html[data-theme="light"] .i-sun { display: block; }
 .focus {
   display: flex; flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 4px;
   /* 占满剩余页面高度：扣掉顶栏(64) + 表头(head-h) + 顶部留白(18)
      + 底部留白(app-pad-b) + 边框余量。 */
@@ -786,6 +785,21 @@ html[data-theme="light"] .i-sun { display: block; }
   font-size: 11.5px; color: var(--muted); letter-spacing: 1.6px;
   margin-bottom: 18px;
 }
+/* 句子的整体容器：切句时只对这一块做淡入位移，
+   卡片背景 / 按钮 / 进度条都不动。
+   内部保持原来的「纵向居中列 + 4px 间距」，布局与旧版一致。 */
+/* 句子区占满「标题与按钮之间」的全部高度，并在其中垂直居中；
+   按钮排 / 进度条钉在底部，不随句子长短上下浮动 */
+.focus .f-sentence {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
 .focus .f-en {
   font-family: var(--serif);
   font-size: clamp(26px, 4vw, 44px);
@@ -805,7 +819,7 @@ html[data-theme="light"] .i-sun { display: block; }
   line-height: 1.7;
 }
 .focus .f-note .note-k { margin-right: 8px; }
-.focus .f-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 34px; }
+.focus .f-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 34px; flex: none; }
 /* 已掌握按钮：固定宽度，勾选前后都不会变宽，避免 stage 布局抖动；
    用颜色区分「已掌握/未掌握」 */
 .focus [data-f="star"] {
@@ -825,12 +839,18 @@ html[data-theme="light"] .i-sun { display: block; }
   margin-top: 30px;
   font-size: 11.5px; color: var(--muted); letter-spacing: .8px;
   display: flex; align-items: center; gap: 12px;
+  flex: none;
 }
-/* 让卡片内部元素切换时有轻微上浮，而不是骤变 */
-.focus > * { animation: fadeUp .28s cubic-bezier(.2,.8,.3,1); }
-.focus > *:nth-child(2) { animation-delay: .02s; }
-.focus > *:nth-child(3) { animation-delay: .05s; }
-.focus > *:nth-child(n+4) { animation-delay: .08s; }
+/* 入场动画只在「进入逐句模式」时播一次。
+   .enter 由 JS 在挂载时加上、稍后自己摘掉；
+   切句时不再重建卡片，也就不会再整块重新淡入。 */
+.focus.enter > * { animation: fadeUp .28s cubic-bezier(.2,.8,.3,1); }
+.focus.enter > *:nth-child(2) { animation-delay: .02s; }
+.focus.enter > *:nth-child(3) { animation-delay: .05s; }
+.focus.enter > *:nth-child(n+4) { animation-delay: .08s; }
+@media (prefers-reduced-motion: reduce) {
+  .focus.enter > * { animation: none; }
+}
 
 /* ---------- 点词浮层 ---------- */
 .pop {
