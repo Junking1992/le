@@ -1450,9 +1450,14 @@
       else if (k === "speak") speak(state.ep.lines[state.active].en);
       else if (k === "zh") focusToggleZh();
       else if (k === "star") {
-        toggleLearned(state.active);
-        // 点「已掌握」后自动跳到下一句
-        focusStep(1);
+        const nowLearned = toggleLearned(state.active);
+        // 点「已掌握」标记后自动跳到下一句；取消标记则留在当前句
+        if (nowLearned) {
+          focusStep(1);
+        } else {
+          // 就地更新按钮状态，避免整块重绘抖动
+          f.classList.remove("on");
+        }
       }
       return;
     }
@@ -1480,6 +1485,15 @@
     if (ph) {
       e.preventDefault();
       showPhrasePop(ph.dataset.ph, ph);
+      return;
+    }
+    /* 列表模式双击句子卡片：切换「已掌握」标记
+       （工具按钮、词、短语等交互元素除外，避免误触） */
+    const line = e.target.closest?.(".line");
+    if (line && state && !state.focus &&
+        !e.target.closest(".ln-tools") && !e.target.closest(".en .w") && !e.target.closest(".ph")) {
+      e.preventDefault();
+      toggleLearned(+line.dataset.i);
     }
   });
 
@@ -1687,6 +1701,7 @@
       if (span) span.textContent = r.pct + "%";
     }
     applyFilter();
+    return on;
   }
 
   /* ============================================================
