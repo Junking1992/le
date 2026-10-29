@@ -509,7 +509,10 @@ html[data-theme="light"] .i-sun { display: block; }
 
 .watch-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 26px; align-items: start; padding-top: 18px; }
 .side {
-  --side-top: calc(64px + var(--head-h, 120px) + 16px);
+  /* 必须与 .watch-layout 的 padding-top(18px) 一致：
+     否则侧栏的自然静止位置比 sticky top 高 2px，
+     滚动第一批像素会被顶起来、再落定。 */
+  --side-top: calc(64px + var(--head-h, 120px) + 18px);
   position: sticky;
   top: var(--side-top);
   display: flex; flex-direction: column; gap: 12px;
