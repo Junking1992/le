@@ -717,6 +717,24 @@ html[data-theme="light"] .i-sun { display: block; }
   font-weight: 700;
 }
 
+/* ---------- 已掌握 + 当前句 ----------
+   .line.active 定义在 .line.learned 之后，会把已掌握的绿底/绿边盖掉，
+   导致激活卡片标记掌握后看不出「已掌握」。
+   这里保留琥珀色外环表示「当前句」，但背景、左侧竖条显示为已掌握的绿。 */
+.line.active.learned {
+  background: linear-gradient(120deg,
+    color-mix(in srgb, var(--ok) 18%, var(--accent-soft)),
+    color-mix(in srgb, var(--ok) 8%, var(--panel)) 62%);
+  border-color: color-mix(in srgb, var(--ok) 55%, var(--accent));
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--accent) 55%, transparent),
+    inset 3px 0 0 var(--ok);
+}
+/* 左侧竖条切成绿色，与「已掌握」一致；顶对琥珀光晕仅作当前句标记 */
+.line.active.learned::before {
+  background: var(--ok);
+}
+
 
 .ln-tools {
   position: absolute; right: 10px; top: 10px;
