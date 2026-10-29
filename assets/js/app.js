@@ -1678,10 +1678,8 @@
     const at = p.learned.indexOf(i);
     if (at >= 0) {
       p.learned.splice(at, 1);
-      toast("已取消标记");
     } else {
       p.learned.push(i);
-      toast("已掌握 " + (i + 1) + " / " + state.ep.lines.length);
     }
     progress[key] = p;
     saveProgress();
