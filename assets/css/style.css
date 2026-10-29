@@ -462,6 +462,9 @@ html[data-theme="light"] .i-sun { display: block; }
 .tool-group button:hover { color: var(--text); }
 .tool-group button.on { background: var(--accent-soft); color: var(--accent); }
 .tool-sep { width: 1px; height: 17px; background: var(--line); margin: 0 2px; }
+/* 逐句模式：隐藏列表模式专用的「中文常显/隐藏」与「全部/未学/已学」工具组
+   （在逐句卡片顶部由「已掌握/中文」等按钮接管） */
+.in-focus .list-only { display: none !important; }
 .speed { display: flex; align-items: center; gap: 5px; font-size: 11.5px; color: var(--muted); }
 .speed input { width: 78px; accent-color: var(--accent); }
 /* 快捷键提示：一排胶囊小标签 */

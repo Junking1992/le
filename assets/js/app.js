@@ -640,10 +640,12 @@
       '<span class="mt-label">精选精讲</span><b>' + picks.length + "</b></button>" +
       "</div>" +
       '<div class="tool-sep"></div>' +
-      toolGroup("zh", [["off", "中文隐藏"], ["on", "中文常显"]], settings.zhAuto ? "on" : "off") +
-      '<div class="tool-sep"></div>' +
-      toolGroup("filter", [["all", "全部"], ["todo", "未学"], ["done", "已学"]], state.filter || "all") +
-      '<div class="tool-sep"></div>' +
+      '<span class="list-only">' +
+        toolGroup("zh", [["off", "中文隐藏"], ["on", "中文常显"]], settings.zhAuto ? "on" : "off") +
+        '<div class="tool-sep"></div>' +
+        toolGroup("filter", [["all", "全部"], ["todo", "未学"], ["done", "已学"]], state.filter || "all") +
+        '<div class="tool-sep"></div>' +
+      "</span>" +
       '<div class="speed"><span>语速</span><input type="range" id="rate" min="0.5" max="1.4" step="0.02" value="' +
       settings.rate + '"><span id="rate-val">' + settings.rate.toFixed(2) + "</span></div>" +
       '<div class="head-keys">' +
@@ -842,6 +844,7 @@
 
   function mountFocus() {
     const stage = $("#stage");
+    document.body.classList.add("in-focus");
     if (!stage) return;
     stage.innerHTML =
       '<div class="focus enter" id="focus">' +
@@ -1362,6 +1365,7 @@
   }
 
   function render() {
+    document.body.classList.remove("in-focus");
     const { parts, params } = parseHash();
     const app = $("#app");
     let html = "";
