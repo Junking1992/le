@@ -43,16 +43,20 @@ SOUND_RE = re.compile(r"[\[\(（【][^\]\)）】]{0,30}[\]\)）】]|♪[^♪]{0,
 
 # 整行丢弃：字幕站水印、片尾广告词（S03 片源带这些，S02 没有）
 DROP_LINE_RE = re.compile(
-    r"^(?:subtitles?\s*:|www\.|https?://|captioning sponsored by|"
+    r"^(?:subtitles?\s*:|synchro\s*:|www\.|https?://|==|captioning sponsored by|"
     r"closed captioning|fox broadcasting company)",
     re.I,
 )
 # 片尾广告剩余片段的特征词，命中即丢
 AD_LINE_RE = re.compile(
-    r"\b(?:volkswagen|maple leaf|refrigerated entrees|grocers deli|"
-    r"20th century fox television|revolution in food)\b",
+    r"(?:volkswagen|maple leaf|refrigerated entrees|grocers deli|"
+    r"20th century fox television|revolution in food|forom\.com|ragbear|"
+    r"tvsubtitles|swsub)",
     re.I,
 )
+# 中文/西语字幕组水印：整行只有非 ASCII 或网址残片
+CJK_JUNK_RE = re.compile(r"^[\s\-=<>/\\|._*#\w]*[\u3000-\u9fff\uff00-\uffef]{2,}[\s\-=<>/\\|._*#\w]*$")
+
 TIME_RE = re.compile(
     r"(\d{1,2}):(\d{2}):(\d{2})[,.](\d{1,3})\s*-->\s*(\d{1,2}):(\d{2}):(\d{2})[,.](\d{1,3})"
 )
@@ -244,8 +248,31 @@ OCR_FIX = [
     (r"norte\ufffdo", "norteño"),
     (r"Se\ufffdor", "Señor"),
     (r"se\ufffdor", "señor"),
+    (r"se\ufffdorita", "señorita"),
+    (r"patr\ufffdn", "patrón"),
+    (r"Patr\ufffdn", "Patrón"),
+    (r"\ufffdQue\s+paso", "¿Qué pasó"),
+    (r"\ufffdPerdon\?", "¿Perdón?"),
+    (r"Perdon\s+a\s+me", "Perdón a mí"),
+    (r"\ufffdEste\s+aqui\?", "¿Este aquí?"),
+    (r"\ufffdCaballos", "¿Caballos"),
+    (r"Caf\ufffd", "Café"),
+    (r"\ufffdTiene\s+el\s+dinero\?", "¿Tiene el dinero?"),
+    (r"\ufffdDonde\s+esta\?", "¿Dónde está?"),
+    (r"\bS\ufffd>\s*Colonel", "Sí, Colonel"),
+    (r"your\s+back\ufffd", "your back."),
     (r"\ufffdSi\?", "¿Sí?"),
     (r"\ufffdEntendido\?", "¿Entendido?"),
+    # S03 相邻词粘连（逐集核对原文后确认的）
+    (r"\bnotgonna\b", "not gonna"),
+    (r"\bherand\b", "her and"),
+    (r"\bliveshere\b", "lives here"),
+    (r"\bworkedout\b", "worked out"),
+    (r"\bguessingboy\b", "guessing, boy"),
+    (r"\btotay\b", "today"),
+    (r"\byoudie\b", "you die"),
+    (r"\bNo worries,alex\b", "No worries, Alex"),
+    (r"\bhanging,all right\b", "hanging, all right"),
 ]
 
 
@@ -286,10 +313,15 @@ def parse_srt(raw):
         start = to_sec(*m.groups()[:4])
         end = to_sec(*m.groups()[4:])
         body = " ".join(lines[ti + 1:])
+        # 字幕组水印常是 GBK 字节被当 UTF-8 解码的乱码，先按原块判断再清洗
+        raw_body = body
         body = TAG_RE.sub("", body)
         body = body.replace("\\N", " ").replace("\\n", " ")
         body = SOUND_RE.sub(" ", body)
         body = re.sub(r"\s+", " ", body).strip()
+        # 中文/西语字幕组水印、网址残片：整条丢弃（可能含乱码，故先查原块）
+        if CJK_JUNK_RE.match(re.sub(r"\s+", " ", raw_body).strip()):
+            continue
         if not re.search(r"[A-Za-z]", body):
             continue
         # 站点水印 / 片尾广告：整条丢弃
