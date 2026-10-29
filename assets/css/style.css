@@ -754,14 +754,14 @@ html[data-theme="light"] .i-sun { display: block; }
   position: relative;
   overflow: hidden;
 }
-/* 顶部一道细腻的琥珀高光线，呼应品牌 */
+/* 顶部一道细腻的琥珀高光线，呼应品牌（细一些，别抢戏） */
 .focus::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 3px;
+  height: 2px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  opacity: .7;
+  opacity: .55;
 }
 .focus .f-index {
   font-family: var(--mono);
@@ -788,6 +788,21 @@ html[data-theme="light"] .i-sun { display: block; }
 }
 .focus .f-note .note-k { margin-right: 8px; }
 .focus .f-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 34px; }
+/* 已掌握按钮：固定宽度，勾选前后都不会变宽，避免 stage 布局抖动；
+   用颜色区分「已掌握/未掌握」 */
+.focus [data-f="star"] {
+  min-width: 108px;
+  justify-content: center;
+  transition: color .18s, border-color .18s, background .18s;
+}
+.focus [data-f="star"].on {
+  color: #0b2722;
+  background: linear-gradient(140deg, #6ee7d8, #2fb7a8);
+  border-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 8px 22px rgba(46, 183, 168, .28);
+}
+.focus [data-f="star"].on:hover { color: #0b2722; filter: brightness(1.05); }
 .focus .f-progress {
   margin-top: 30px;
   font-size: 11.5px; color: var(--muted); letter-spacing: .8px;

@@ -843,7 +843,7 @@
       '<button class="btn" data-f="prev">← 上一句</button>' +
       '<button class="btn" data-f="speak">🔊 朗读</button>' +
       '<button class="btn" data-f="zh">显示中文</button>' +
-      '<button class="btn" data-f="star">' + (learned ? "✓ 已掌握" : "标记已掌握") + "</button>" +
+      '<button class="btn' + (learned ? " on" : "") + '" data-f="star">标记已掌握</button>' +
       '<button class="btn primary" data-f="next">下一句 →</button>' +
       "</div>" +
       '<div class="f-progress">' + Math.round(((pos + 1) / idxs.length) * 100) + "% · 按 F 或点「列表模式」退出</div>" +
@@ -1451,7 +1451,9 @@
       else if (k === "zh") focusToggleZh();
       else if (k === "star") {
         toggleLearned(state.active);
-        renderFocus();
+        // 只切换按钮的「已掌握」状态样式，避免整块 stage 重绘导致的布局抖动
+        const lp = (progress[epKey(state.showId, state.sNo, state.eNo)] || {}).learned || [];
+        f.classList.toggle("on", lp.indexOf(state.active) >= 0);
       }
       return;
     }
