@@ -72,13 +72,13 @@ try {
     eps++; picks += (e.picks || []).length;
     e.lines.forEach((l) => { lines++; if (l.zh) zh++; if (l.note) notes++; });
   })));
-  check(eps === 24, "S2+S3 共 24 集，实际 " + eps);
+  check(eps === 32, "S2+S3 共 32 集，实际 " + eps);
   console.log("  data: " + lines + " lines / " + zh + " translated (" +
     (zh / lines * 100).toFixed(1) + "%) / " + notes + " notes / " + picks + " picks");
 
   /* ---- 越狱 S3（Sona 篇） ---- */
   go("#/show/pb/3");
-  check(doc.querySelectorAll(".ep-card").length === 2, "S3 有 2 集");
+  check(doc.querySelectorAll(".ep-card").length === 10, "S3 有 10 集");
 
   go("#/watch/pb/3/1");
   const n3 = doc.querySelectorAll(".line").length;
@@ -99,6 +99,23 @@ try {
   const n32 = doc.querySelectorAll(".line").length;
   check(n32 === 574, "S3E02 渲染 574 句，实际 " + n32);
   check(doc.querySelectorAll(".zh-pending").length === 0, "S3E02 无待翻译占位");
+
+  /* 逐集抽查 S3 全部 10 集 */
+  const s3counts = { 3: 587, 4: 577, 5: 562, 6: 657, 7: 480, 8: 583, 9: 558, 10: 541 };
+  let s3ok = true;
+  for (const [ep, want] of Object.entries(s3counts)) {
+    go("#/watch/pb/3/" + ep);
+    const got = doc.querySelectorAll(".line").length;
+    if (got !== want) { s3ok = false; console.log("  S3E" + ep + " 句数 " + got + " 应为 " + want); }
+    if (doc.querySelectorAll(".zh-pending").length !== 0) {
+      s3ok = false; console.log("  S3E" + ep + " 有待翻译占位");
+    }
+    const tab = doc.querySelector(".mode-tab[data-mode='pick']");
+    if (!tab || +tab.querySelector("b").textContent < 20) {
+      s3ok = false; console.log("  S3E" + ep + " 精选不足 20");
+    }
+  }
+  check(s3ok, "S3 E03–E10 逐集句数、译文、精选均正常");
 
   console.log("\n" + (errs.length ? errs.join("\n") : "ALL PASS"));
 } catch (e) {

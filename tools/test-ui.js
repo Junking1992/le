@@ -85,7 +85,7 @@ try {
 
   /* 越狱 S3（Sona 篇）：逐集首句中文 + 精选 + 点词 */
   let s3ok = true;
-  for (let e = 1; e <= 2; e++) {
+  for (let e = 1; e <= 10; e++) {
     go("#/watch/pb/3/" + e);
     const first = doc.querySelector(".line");
     if (!first) { s3ok = false; console.log("  S3E" + e + " 无行"); continue; }
@@ -101,7 +101,7 @@ try {
     const np = doc.querySelectorAll(".line").length;
     if (np < 15) { s3ok = false; console.log("  S3E" + e + " 精选只有 " + np + " 句"); }
   }
-  check(s3ok, "S3 两集首句中文可点开、精选 15+ 句");
+  check(s3ok, "S3 十集首句中文可点开、精选 15+ 句");
 
   go("#/watch/pb/3/2");
   let miss3 = 0, tried3 = 0;
