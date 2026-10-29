@@ -844,7 +844,7 @@
       '<div class="f-actions">' +
       '<button class="btn" data-f="prev">← 上一句</button>' +
       '<button class="btn" data-f="speak">🔊 朗读</button>' +
-      '<button class="btn" data-f="zh">显示中文</button>' +
+      '<button class="btn" id="f-zh-btn" data-f="zh">显示中文</button>' +
       '<button class="btn" data-f="star">标记已掌握</button>' +
       '<button class="btn primary" data-f="next">下一句 →</button>' +
       "</div>" +
@@ -887,6 +887,10 @@
       noteEl.hidden = !l.note;
       noteEl.innerHTML = l.note ? '<span class="note-k">讲解</span>' + esc(l.note) : "";
     }
+
+    // 切到新句子：中文回到隐藏态，按钮文字也复位
+    const zhBtn = $("#f-zh-btn");
+    if (zhBtn) zhBtn.textContent = "显示中文";
 
     syncFocusStar();
 
@@ -939,10 +943,23 @@
   function focusToggleZh() {
     const zh = $("#f-zh");
     if (!zh) return;
-    zh.classList.remove("hidden");
-    zh.textContent = state.ep.lines[state.active].zh;
+    // 这句没有中文：不切换，保持提示态
+    if (!state.ep.lines[state.active].zh) return;
+    const show = zh.classList.contains("hidden");
+    const btn = $("#f-zh-btn");
+    if (show) {
+      // 显示中文
+      zh.classList.remove("hidden");
+      zh.textContent = state.ep.lines[state.active].zh;
+      if (btn) btn.textContent = "隐藏中文";
+    } else {
+      // 隐藏中文
+      zh.classList.add("hidden");
+      zh.textContent = state.ep.lines[state.active].zh ? "点击「显示中文」或按空格" : "";
+      if (btn) btn.textContent = "显示中文";
+    }
     const note = $("#f-note");
-    if (note) note.hidden = false;
+    if (note) note.hidden = !show;
   }
 
   /* ============================================================
