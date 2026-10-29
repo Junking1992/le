@@ -1701,7 +1701,7 @@
       if (span) span.textContent = r.pct + "%";
     }
     applyFilter();
-    return on;
+    return p.learned.indexOf(i) >= 0;
   }
 
   /* ============================================================
