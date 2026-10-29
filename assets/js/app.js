@@ -602,7 +602,9 @@
     state.eNo = +eNo;
     state.ep = ep;
     state.focus = false;
-    const savedCursor = (progress[epKey(showId, sNo, eNo)] || {}).cursor;
+    const savedCursor = (progress[epKey(showId, sNo, eNo)] || {})[
+      settings.mode === "pick" ? "cursorPick" : "cursorAll"
+    ];
     state.active = typeof savedCursor === "number" ? savedCursor : 0;
     state.filter = "all";
     state.mode = settings.mode || "all";
@@ -1316,9 +1318,13 @@
         settings.mode = m;
         saveSettings();
         $$(".mode-tab").forEach((b) => b.classList.toggle("active", b === modeTab));
+        // 切到另一个模式时，把当前句切到那个模式各自记住的位置
+        const p = progress[epKey(state.showId, state.sNo, state.eNo)] || {};
+        const saved = p[m === "pick" ? "cursorPick" : "cursorAll"];
+        if (typeof saved === "number") state.active = saved;
         if (state.focus) {
           const idxs = visibleIndexes();
-          state.active = idxs[0] || 0;
+          if (idxs.indexOf(state.active) < 0) state.active = idxs[0] || 0;
           renderFocus();
         } else {
           renderLines();
@@ -1548,12 +1554,14 @@
     }
   });
 
-  /* 记住“这一集上次停在哪一句” */
+  /* 记住“这一集上次停在哪一句”。
+     全部台词 / 精选精讲 各记各的，避免互相覆盖：
+     两个模式显示的句子集合不同，当前句应当各自单独记住。 */
   function saveCursor() {
     if (!state.ep) return;
     const key = epKey(state.showId, state.sNo, state.eNo);
     const p = progress[key] || (progress[key] = {});
-    p.cursor = state.active;
+    p[state.mode === "pick" ? "cursorPick" : "cursorAll"] = state.active;
     saveProgress();
   }
 
