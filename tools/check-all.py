@@ -18,13 +18,22 @@ except Exception:
 
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# 季号：默认 S2（保持原有用法），可传 --season 3
+season = 2
+for i, a in enumerate(sys.argv[1:]):
+    if a == "--season" and i + 2 <= len(sys.argv[1:]):
+        season = int(sys.argv[i + 2])
+    elif a.startswith("--season="):
+        season = int(a.split("=", 1)[1])
+
 rows = []
-for cf in sorted(glob.glob(os.path.join(root, "clean", "pb", "S02E*.json"))):
+pattern = os.path.join(root, "clean", "pb", "S%02dE*.json" % season)
+for cf in sorted(glob.glob(pattern)):
     name = os.path.splitext(os.path.basename(cf))[0]
     n = len(json.load(open(cf, encoding="utf-8")))
     m = re.search(r"E(\d+)", name)
     ep = int(m.group(1)) if m else 0
-    tf = os.path.join(root, "translations", "pb-s2", "e%02d.json" % ep)
+    tf = os.path.join(root, "translations", "pb-s%d" % season, "e%02d.json" % ep)
     if not os.path.exists(tf):
         rows.append((ep, n, None, None, None, "缺文件"))
         continue

@@ -40,6 +40,19 @@ except Exception:
 
 TAG_RE = re.compile(r"<[^>]+>|\{\\[^}]*\}")
 SOUND_RE = re.compile(r"[\[\(（【][^\]\)）】]{0,30}[\]\)）】]|♪[^♪]{0,60}♪")
+
+# 整行丢弃：字幕站水印、片尾广告词（S03 片源带这些，S02 没有）
+DROP_LINE_RE = re.compile(
+    r"^(?:subtitles?\s*:|www\.|https?://|captioning sponsored by|"
+    r"closed captioning|fox broadcasting company)",
+    re.I,
+)
+# 片尾广告剩余片段的特征词，命中即丢
+AD_LINE_RE = re.compile(
+    r"\b(?:volkswagen|maple leaf|refrigerated entrees|grocers deli|"
+    r"20th century fox television|revolution in food)\b",
+    re.I,
+)
 TIME_RE = re.compile(
     r"(\d{1,2}):(\d{2}):(\d{2})[,.](\d{1,3})\s*-->\s*(\d{1,2}):(\d{2}):(\d{2})[,.](\d{1,3})"
 )
@@ -209,6 +222,30 @@ OCR_FIX = [
     (r"\bI' ve\b", "I've"),
     (r"\bI' ll\b", "I'll"),
     (r"\bI' d\b", "I'd"),
+    # S03 字幕站整词错切：l 被认成 I，且与相邻词粘连
+    (r"\bthey\s+[Il]t\s+here\s+us\b", "they left us here"),
+    (r"\bassisyou\b", "assist you"),
+    # S03 相邻词粘连
+    (r"\bknowsyou're\b", "knows you're"),
+    (r"\baftertomorrow\b", "after tomorrow"),
+    (r"\byouokay\b", "you okay"),
+    (r"\bthishirst\b", "this thirst"),
+    (r"\bmeout\b", "me out"),
+    # S03 源字幕把两个人的话塞进同一条 cue，按句号断开
+    (r"go hungry and thirsty All right\.", "go hungry and thirsty. All right."),
+    (r"^All right\. and damn near", "All right. And damn near"),
+    # S03 字母错认（n→h、T→Th 等）
+    (r"\bhow\s+ne's\s+found\b", "how he's found"),
+    (r"^Th's\s+got\b", "That's got"),
+    (r"\bDid you brother\b", "Did your brother"),
+    # S03 源字幕 layout 应为 lay out
+    (r"prepared to layout\b", "prepared to lay out"),
+    # S03 源字幕西语重音字节已损坏（显示为 U+FFFD），按上下文补回
+    (r"norte\ufffdo", "norteño"),
+    (r"Se\ufffdor", "Señor"),
+    (r"se\ufffdor", "señor"),
+    (r"\ufffdSi\?", "¿Sí?"),
+    (r"\ufffdEntendido\?", "¿Entendido?"),
 ]
 
 
@@ -254,6 +291,9 @@ def parse_srt(raw):
         body = SOUND_RE.sub(" ", body)
         body = re.sub(r"\s+", " ", body).strip()
         if not re.search(r"[A-Za-z]", body):
+            continue
+        # 站点水印 / 片尾广告：整条丢弃
+        if DROP_LINE_RE.match(body) or AD_LINE_RE.search(body):
             continue
         # 双人对话拆分：拆开后每段单独成 cue（时间点相同，不会互相合并）
         pieces = split_dialog(body)
@@ -357,6 +397,12 @@ def merge_cues(cues, max_gap=1.5):
         t = re.sub(r"\bman>$", "man?", t)
         # 按词修正 OCR 错字（l/I 混淆等）
         t = fix_ocr_words(t)
+        # 合并后残留的片尾广告 / 水印碎片
+        if DROP_LINE_RE.match(t) or AD_LINE_RE.search(t):
+            continue
+        # 广告截断后的残句（如 "Ro"），无实义且极短
+        if re.fullmatch(r"(?:Ro|Simply Fresh)", t):
+            continue
         if len(t.split()) < 1:
             continue
         cleaned.append({"en": t, "start": round(s, 2), "end": round(e, 2)})

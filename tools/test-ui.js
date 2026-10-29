@@ -83,6 +83,36 @@ try {
   }
   check(pickOk, "22 集精选模式都有 15+ 句");
 
+  /* 越狱 S3（Sona 篇）：逐集首句中文 + 精选 + 点词 */
+  let s3ok = true;
+  for (let e = 1; e <= 2; e++) {
+    go("#/watch/pb/3/" + e);
+    const first = doc.querySelector(".line");
+    if (!first) { s3ok = false; console.log("  S3E" + e + " 无行"); continue; }
+    const zh = first.querySelector(".zh");
+    click(first.querySelector(".zh-btn"));
+    if (!zh || zh.hidden !== false) { s3ok = false; console.log("  S3E" + e + " 点不开中文"); continue; }
+    if (!zh.textContent.trim() || zh.textContent.includes("待翻译")) {
+      s3ok = false; console.log("  S3E" + e + " 中文为空: " + zh.textContent.slice(0, 20));
+    }
+    const tab = doc.querySelector(".mode-tab[data-mode='pick']");
+    if (!tab) { s3ok = false; continue; }
+    click(tab);
+    const np = doc.querySelectorAll(".line").length;
+    if (np < 15) { s3ok = false; console.log("  S3E" + e + " 精选只有 " + np + " 句"); }
+  }
+  check(s3ok, "S3 两集首句中文可点开、精选 15+ 句");
+
+  go("#/watch/pb/3/2");
+  let miss3 = 0, tried3 = 0;
+  for (const el of [...doc.querySelectorAll(".line .w")].slice(0, 300)) {
+    tried3++;
+    click(el);
+    const pop = doc.getElementById("pop");
+    if (pop.hidden || pop.textContent.includes("词典未收录")) miss3++;
+  }
+  check(miss3 === 0, "S3E02 抽查 " + tried3 + " 个词，未收录 " + miss3);
+
   /* 点词：随机取若干行里的词，确认都能查到 */
   go("#/watch/pb/2/14");
   let miss = 0, tried = 0;

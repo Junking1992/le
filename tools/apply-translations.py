@@ -40,6 +40,23 @@ TITLES = {
     21: ("Fin Del Camino", "卡米诺尽头"), 22: ("Sona", "索纳"),
 }
 
+# 第三季（Sona 篇）分集标题
+TITLES_S3 = {
+    1: ("Orientación", "入监指引"), 2: ("Fire/Water", "火与水"),
+    3: ("Call Waiting", "来电等待"), 4: ("Good Fences", "好篱笆"),
+    5: ("Interference", "干扰"), 6: ("Photo Finish", "照片终局"),
+    7: ("Vamonos", "走吧"), 8: ("Bang and Burn", "明抢暗算"),
+    9: ("Boxed In", "困局"), 10: ("Dirt Nap", "长眠"),
+    11: ("Under and Out", "穿地而出"), 12: ("Hell or High Water", "赴汤蹈火"),
+    13: ("The Art of the Deal", "交易的艺术"),
+}
+
+# 每季的剧集简介（desc 里写哪一季）
+SEASON_DESC = {
+    2: "迈克尔·斯科菲尔德为救被判死刑的哥哥林肯，带着精心设计的纹身入狱，策划了一场惊天越狱。第二季里，八名逃犯在全美追捕下各自逃亡。",
+    3: "八人越狱后，林肯洗清罪名，迈克尔却被关进巴拿马最凶险的索纳监狱。为了救出被绑架的萨拉和L.J.，他必须在一周内把另一个囚犯弄出去。",
+}
+
 META_OBJ = {
     "id": "pb", "title": "Prison Break", "titleZh": "越狱", "year": "2005",
     "genre": "犯罪 / 剧情", "network": "FOX",
@@ -79,12 +96,20 @@ def main():
     for fn in sorted(os.listdir(src)):
         if not fn.endswith(".json"):
             continue
-        m = re.search(r"E(\d+)", fn, re.I)
+        m = re.search(r"S(\d+)E(\d+)", fn, re.I)
         if not m:
             continue
-        no = int(m.group(1))
+        # clean/ 目录里可能同时存在多季（S02Exx、S03Exx），只取当前季
+        if int(m.group(1)) != args.season:
+            continue
+        no = int(m.group(2))
         en_list = json.load(open(os.path.join(src, fn), encoding="utf-8"))
-        title, title_zh = TITLES.get(no, ("Episode %d" % no, ""))
+        titles = TITLES_S3 if args.season == 3 else TITLES
+        title, title_zh = titles.get(no, ("Episode %d" % no, ""))
+
+        meta = dict(META_OBJ)
+        if args.season in SEASON_DESC:
+            meta["desc"] = SEASON_DESC[args.season]
 
         tr_path = os.path.join(tr, "e%02d.json" % no)
         zh_list, notes, picks, wmaps = [], {}, [], {}
@@ -122,7 +147,7 @@ def main():
         body.append("   改译文：编辑 translations/%s-s%d/e%02d.json 后重新运行脚本。\n" % (args.show, args.season, no))
         body.append("   ============================================================ */\n\n")
         body.append("(function () {\n")
-        body.append("  var META = %s;\n\n" % json.dumps(META_OBJ, ensure_ascii=False))
+        body.append("  var META = %s;\n\n" % json.dumps(meta, ensure_ascii=False))
         body.append("  registerEpisode(META, %d, {\n" % args.season)
         body.append("    no: %d,\n" % no)
         body.append("    title: %s,\n" % js_str(title))

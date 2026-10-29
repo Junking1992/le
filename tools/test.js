@@ -38,7 +38,7 @@ const click = (el) => el.dispatchEvent(new w.MouseEvent("click", { bubbles: true
 try {
   check(doc.querySelectorAll(".show-card").length === 1, "首页剧集卡片");
   go("#/show/pb/2");
-  check(doc.querySelectorAll(".ep-card").length === 22, "22 集");
+  check(doc.querySelectorAll(".ep-card").length === 22, "S2 有 22 集");
 
   go("#/watch/pb/2/1");
   const n = doc.querySelectorAll(".line").length;
@@ -72,9 +72,33 @@ try {
     eps++; picks += (e.picks || []).length;
     e.lines.forEach((l) => { lines++; if (l.zh) zh++; if (l.note) notes++; });
   })));
-  check(eps === 22, "22 集");
+  check(eps === 24, "S2+S3 共 24 集，实际 " + eps);
   console.log("  data: " + lines + " lines / " + zh + " translated (" +
     (zh / lines * 100).toFixed(1) + "%) / " + notes + " notes / " + picks + " picks");
+
+  /* ---- 越狱 S3（Sona 篇） ---- */
+  go("#/show/pb/3");
+  check(doc.querySelectorAll(".ep-card").length === 2, "S3 有 2 集");
+
+  go("#/watch/pb/3/1");
+  const n3 = doc.querySelectorAll(".line").length;
+  check(n3 === 403, "S3E01 渲染 403 句，实际 " + n3);
+  const pick3 = doc.querySelector(".mode-tab[data-mode='pick'] b");
+  check(pick3 && +pick3.textContent === 34, "S3E01 精选 34 条");
+  check(doc.querySelectorAll(".zh-pending").length === 0, "S3E01 无待翻译占位");
+  check(doc.querySelector(".line .zh").hidden === true, "S3E01 中文默认隐藏");
+  click(doc.querySelector(".line .zh-btn"));
+  check(doc.querySelector(".line .zh").hidden === false, "S3E01 点击显示中文");
+  check(doc.querySelector(".note-box") !== null, "S3E01 有讲解框");
+  const w3 = doc.querySelectorAll(".line .w")[3];
+  click(w3);
+  check(!doc.getElementById("pop").hidden, "S3E01 点词弹层");
+  check(!doc.getElementById("pop").textContent.includes("词典未收录"), "S3E01 点词有译文");
+
+  go("#/watch/pb/3/2");
+  const n32 = doc.querySelectorAll(".line").length;
+  check(n32 === 574, "S3E02 渲染 574 句，实际 " + n32);
+  check(doc.querySelectorAll(".zh-pending").length === 0, "S3E02 无待翻译占位");
 
   console.log("\n" + (errs.length ? errs.join("\n") : "ALL PASS"));
 } catch (e) {
