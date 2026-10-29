@@ -600,7 +600,7 @@ html[data-theme="light"] .i-sun { display: block; }
   letter-spacing: .3px;
   pointer-events: none;
 }
-/* .line.active 的样式统一放在「精选句」之后定义，见下方 */
+/* .line.active 的样式统一放在 .line.learned 之后定义，见下方 */
 .ln-no {
   width: 32px; height: 32px;
   display: grid; place-items: center;
@@ -688,29 +688,9 @@ html[data-theme="light"] .i-sun { display: block; }
   vertical-align: 1px;
 }
 
-/* ---------- 精选句 ---------- */
-.line.pick {
-  border-color: color-mix(in srgb, var(--accent-2) 42%, var(--line-soft));
-  background: linear-gradient(120deg, var(--accent-2-soft), var(--panel) 46%);
-}
-.line.pick .ln-no {
-  color: var(--accent-2);
-  border-color: color-mix(in srgb, var(--accent-2) 45%, var(--line));
-  background: var(--panel);
-  font-weight: 600;
-}
-.line.pick::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 14px; bottom: 14px;
-  width: 3px;
-  border-radius: 0 3px 3px 0;
-  background: var(--accent-2);
-}
-
 /* ---------- 当前句高亮 ----------
-   必须放在 .line.pick / .line.learned 之后，否则背景和边框会被它们覆盖，
-   精选页里就会看不出哪一句是当前句。 */
+   必须放在 .line.learned 之后，否则背景和边框会被它们覆盖，
+   列表里就会看不出哪一句是当前句。 */
 .line.active {
   border-color: var(--accent);
   background: linear-gradient(120deg,
@@ -720,7 +700,7 @@ html[data-theme="light"] .i-sun { display: block; }
     0 0 0 2px color-mix(in srgb, var(--accent) 55%, transparent),
     0 8px 22px rgba(0, 0, 0, .28);
 }
-/* 当前句左侧琥珀色竖条，盖住精选句原本的青绿条 */
+/* 当前句左侧琥珀色竖条 */
 .line.active::before {
   content: "";
   position: absolute;

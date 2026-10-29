@@ -1391,6 +1391,9 @@
       const line = act.closest(".line");
       const i = +line.dataset.i;
       const a = act.dataset.act;
+      // 点卡片内的任何操作（查看中文 / 朗读 / 标记）都把这一句设为当前句，
+      // 让「激活效果」跟着点击出现，而不是只有点卡片空白处才高亮。
+      setActiveLine(line, false);
       if (a === "zh") {
         const zh = $(".zh", line);
         const note = $(".note-box", line);
@@ -1417,6 +1420,8 @@
     const w = t.closest(".en .w, .f-en .w");
     if (w) {
       e.preventDefault();
+      const wLine = w.closest(".line");
+      if (wLine) setActiveLine(wLine, false);
       showWordPop(w.textContent || w.dataset.w, w);
       return;
     }
@@ -1424,6 +1429,8 @@
     const ph = t.closest(".ph");
     if (ph) {
       e.preventDefault();
+      const phLine = ph.closest(".line");
+      if (phLine) setActiveLine(phLine, false);
       showPhrasePop(ph.dataset.ph, ph);
       return;
     }
