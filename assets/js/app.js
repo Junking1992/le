@@ -628,7 +628,7 @@
       '<span class="spacer"></span>' +
       (prev ? '<a class="btn sm ghost" href="#/watch/' + show.id + "/" + sNo + "/" + prev.no + '">← 上一集</a>' : "") +
       (next ? '<a class="btn sm ghost" href="#/watch/' + show.id + "/" + sNo + "/" + next.no + '">下一集 →</a>' : "") +
-      '<button class="btn sm" id="focus-btn">' + (state.focus ? "列表模式" : "逐句模式") + '</button>' +
+      '<button type="button" class="btn sm" id="focus-btn">' + (state.focus ? "列表模式" : "逐句模式") + '</button>' +
       "</div>" +
 
       '<div class="watch-tools">' +
@@ -830,6 +830,16 @@
      进度条一起销毁重建，再叠上 .focus > * 的入场动画（带 .02/.05/.08s
      的依次延迟），于是每次切句整个 stage 都要重新淡入一次 ——
      看到的就是整片区域刷新闪动。 */
+  /* 记录「标记已掌握后自动跳到下一句」的延时定时器，
+     退出逐句模式 / 连续点击时用于清理取消 */
+  let focusAutoStepTimer = null;
+
+  /* 退出逐句模式时取消未触发的自动跳句 */
+  function cancelFocusAutoStep() {
+    clearTimeout(focusAutoStepTimer);
+    focusAutoStepTimer = null;
+  }
+
   function mountFocus() {
     const stage = $("#stage");
     if (!stage) return;
@@ -842,11 +852,11 @@
       '<div class="f-note" id="f-note" hidden></div>' +
       "</div>" +
       '<div class="f-actions">' +
-      '<button class="btn" data-f="prev">← 上一句</button>' +
-      '<button class="btn" data-f="speak">🔊 朗读</button>' +
-      '<button class="btn" id="f-zh-btn" data-f="zh">显示中文</button>' +
-      '<button class="btn" data-f="star">标记已掌握</button>' +
-      '<button class="btn primary" data-f="next">下一句 →</button>' +
+      '<button type="button" class="btn" data-f="prev">← 上一句</button>' +
+      '<button type="button" class="btn" data-f="speak">🔊 朗读</button>' +
+      '<button type="button" class="btn" id="f-zh-btn" data-f="zh">显示中文</button>' +
+      '<button type="button" class="btn" data-f="star">已掌握</button>' +
+      '<button type="button" class="btn primary" data-f="next">下一句 →</button>' +
       "</div>" +
       '<div class="f-progress" id="f-progress"></div>' +
       "</div>";
@@ -1451,6 +1461,7 @@
         mountFocus();
         $("#focus-btn").textContent = "列表模式";
       } else {
+        cancelFocusAutoStep();
         render();
       }
       return;
@@ -1544,10 +1555,17 @@
       else if (k === "zh") focusToggleZh();
       else if (k === "star") {
         const nowLearned = toggleLearned(state.active);
-        // 点「已掌握」标记后自动跳到下一句；取消标记则留在当前句
+        // 点「已掌握」标记后延时 300ms 再自动跳到下一句，
+        // 让用户看清标记生效的瞬间；取消标记则留在当前句
         if (nowLearned) {
-          focusStep(1);
+          clearTimeout(focusAutoStepTimer);
+          // 立即把按钮点亮，让用户看到标记生效；300ms 后再自动跳到下一句
+          syncFocusStar();
+          focusAutoStepTimer = setTimeout(() => {
+            focusStep(1);
+          }, 300);
         } else {
+          clearTimeout(focusAutoStepTimer);
           // 就地更新按钮状态，避免整块重绘抖动
           f.classList.remove("on");
         }
