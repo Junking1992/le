@@ -1327,7 +1327,8 @@
           if (idxs.indexOf(state.active) < 0) state.active = idxs[0] || 0;
           renderFocus();
         } else {
-          renderLines();
+          // 切换到另一模式时，重新渲染并自动滚动到激活的卡片
+          renderLines(true);
         }
       }
       return;
